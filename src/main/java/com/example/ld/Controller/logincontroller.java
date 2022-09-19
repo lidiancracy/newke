@@ -3,14 +3,20 @@ package com.example.ld.Controller;
 import com.example.ld.Util.ActivateState;
 import com.example.ld.entity.User;
 import com.example.ld.service.UserService;
+import com.google.code.kaptcha.Producer;
+import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
+import javax.imageio.ImageIO;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.util.Map;
 
 /**
@@ -18,6 +24,7 @@ import java.util.Map;
  * @Description TODO
  * @Date 2022/9/17 16:38
  */
+@Slf4j
 @Controller
 public class logincontroller implements ActivateState {
     @Autowired
@@ -67,6 +74,38 @@ public class logincontroller implements ActivateState {
             model.addAttribute("target", "/index");
         }
         return "/site/operate-result";
+    }
+
+//获取验证图片
+@Autowired
+private Producer producer;
+
+    /**
+     * 获得生成的随机验证码
+     * @param response
+     * @param httpSession
+     */
+    @GetMapping("/kaptcha")
+    public void getKapatchaImage(HttpServletResponse response, HttpSession httpSession){
+        //生成验证码
+        String text = producer.createText();
+        BufferedImage image = producer.createImage(text);
+
+        //验证码字符串写入到session中.服务器将依托cookie 【key,value】value中存放的是当前生成的sessionid.
+        //以后浏览器访问浏览器时，将会携带该cookie信息，使得多个浏览器请求中携带重要的信息【基于HTTP请求是无状态的，将验证字符串存入到session中，保存到服务中】
+        httpSession.setAttribute("kapatchaStr", text);
+
+        //图片响应给response
+        //响应格式为.png的图片
+        response.setContentType("image/png");
+        try {
+            ServletOutputStream outputStream = response.getOutputStream();
+            //响应给浏览器的是验证码图片
+            ImageIO.write(image,"png",outputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 
