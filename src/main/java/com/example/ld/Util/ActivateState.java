@@ -14,4 +14,10 @@ public interface ActivateState {
     public static final int UNACTIVATED = 0;
     public static final int ACTIVATED = 1;
     public static final int REPEATACTIVATE = 2;
+    /**
+     * 记住我 状态下的凭证存储时间
+     * 默认凭证存储时间
+     */
+    public static final int default_exptime = 3600*24;
+    public static final int remenber_exptime = 3600*24*100;
 }

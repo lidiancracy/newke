@@ -17,4 +17,15 @@ public interface UserService {
     public Map<String,Object> register(User user);
 
     int activateemail(int id, String code) ;
+
+    /**
+     * 判断 账号密码验证码
+     * @param username
+     * @param password
+     * @param expiretime
+     * @return
+     */
+    public Map<String,Object> login(String username,String password,int expiretime);
+
+    void logout(String ticket);
 }
