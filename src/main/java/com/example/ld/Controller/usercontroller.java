@@ -2,6 +2,7 @@ package com.example.ld.Controller;
 
 import com.example.ld.Util.communityutil;
 import com.example.ld.Util.hostholder;
+import com.example.ld.annociation.loginrequired;
 import com.example.ld.entity.User;
 import com.example.ld.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +29,7 @@ import java.time.format.DateTimeFormatter;
 @Controller
 @RequestMapping("/user")
 public class usercontroller {
+    @loginrequired
     @GetMapping("/setting")
     public String getsetting(){
         return "/site/setting";
@@ -41,6 +43,7 @@ public class usercontroller {
     hostholder hostholder;
     @Autowired
     UserService userService;
+    @loginrequired
     @PostMapping("/upload")
     public String upload(MultipartFile headimage){
         String filename = headimage.getOriginalFilename();
@@ -60,6 +63,7 @@ public class usercontroller {
     /**
      * 修改密码
      */
+    @loginrequired
     @PostMapping("/changepassword")
     public String changepassword(String originalpassword, String newpassword, String newpsagain, Model model){
         User user = hostholder.getUser();
