@@ -3,11 +3,18 @@ package com.example.ld.service.impl;
 
 import com.example.ld.Util.ActivateState;
 import com.example.ld.Util.communityutil;
+import com.example.ld.Util.hostholder;
 import com.example.ld.entity.LoginTicket;
 import com.example.ld.entity.User;
 import com.example.ld.mapper.LoginTicketMapper;
 import com.example.ld.mapper.UserMapper;
 import com.example.ld.service.UserService;
+import com.qiniu.common.QiniuException;
+import com.qiniu.http.Response;
+import com.qiniu.storage.Configuration;
+import com.qiniu.storage.Region;
+import com.qiniu.storage.UploadManager;
+import com.qiniu.util.Auth;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,6 +24,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.io.InputStream;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -100,6 +108,12 @@ public class UserServiceImpl implements UserService, ActivateState {
         return map;
     }
 
+    /**
+     * 激活邮箱
+     * @param id
+     * @param code
+     * @return
+     */
     @Override
     public int activateemail(int id, String code) {
         User user = userMapper.selectById(id);
@@ -120,6 +134,13 @@ public class UserServiceImpl implements UserService, ActivateState {
 
     }
 
+    /**
+     * 登录验证
+     * @param username
+     * @param password
+     * @param expiretime
+     * @return
+     */
     @Override
     public Map<String, Object> login(String username, String password, int expiretime) {
         Map<String, Object> map = new HashMap<>();
@@ -165,7 +186,13 @@ public class UserServiceImpl implements UserService, ActivateState {
         loginTicketMapper.updateticket(selectbyticket,1);
     }
 
-
+    /**
+     * 发送邮件api
+     * @param myemail
+     * @param title
+     * @param url
+     * @param s
+     */
     private void sendemail(String myemail, String title, String url, String s) {
         //创建简单邮件消息
         SimpleMailMessage message = new SimpleMailMessage();
@@ -183,6 +210,87 @@ public class UserServiceImpl implements UserService, ActivateState {
         } catch (MailException e) {
             e.printStackTrace();
             log.error("发送失败");
+        }
+    }
+    /**
+     * 头像文件上传api
+     * @param inputStream
+     * @param fileName
+     * @return
+     */
+    @Value("${qiniu.accesskey}")
+    String accesskey;
+    @Value("${qiniu.secretkey}")
+    String secretkey;
+    @Value("${qiniu.domain}")
+    String prewebside;
+    @Override
+    public String upload(InputStream inputStream, String fileName) {
+        //构造一个带指定 Region 对象的配置类
+        //Region.region2();代表华南地区
+        Configuration cfg = new Configuration(Region.region2());
+        //...其他参数参考类注释
+        UploadManager uploadManager = new UploadManager(cfg);
+        //...生成上传凭证，然后准备上传
+        //AK和SK从七牛云个人中心秘钥管理查看
+        String accessKey = accesskey;
+        String secretKey = secretkey;
+        //bucket就是创建
+        String bucket = "niuke-community";
+        //默认不指定key的情况下，以文件内容的hash值作为文件名
+        String key = fileName;
+        String result = null;
+
+        try {
+            Auth auth = Auth.create(accessKey, secretKey);
+            String upToken = auth.uploadToken(bucket);
+            try {
+                Response response = uploadManager.put(inputStream, key, upToken, null, null);
+                //解析上传成功的结果
+                if(response.statusCode==200){
+                    //返回图片上传的路径地址
+
+                    result = prewebside+fileName;
+                }
+            } catch (QiniuException ex) {
+                Response r = ex.response;
+                System.err.println(r.toString());
+                try {
+                    System.err.println(r.bodyString());
+                } catch (QiniuException ex2) {
+                    //ignore
+                }
+            }
+        } catch (Exception ex) {
+            //ignore
+        }
+        return result;
+    }
+
+    /**
+     * 根据用户id 改头像
+     */
+    @Override
+    public int changepic(Integer id, String url) {
+        int i = userMapper.updateHeader(id, url);
+        return i;
+    }
+
+    /**
+     * 验证输入两遍新密码的合理性，以及更新操作
+     * @param newpassword
+     * @param newpsagain
+     * @return
+     */
+    @Autowired
+    com.example.ld.Util.hostholder hostholder;
+    @Override
+    public boolean checkchangepassword(Integer id,String newpassword, String newpsagain) {
+        if(!newpassword.equals(newpsagain)){
+            return false;
+        }else {
+            userMapper.updatePassword(id,communityutil.md5(newpassword+hostholder.getUser().getSalt()) );
+            return  true;
         }
     }
 

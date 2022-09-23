@@ -4,6 +4,7 @@ package com.example.ld.service;
 import com.example.ld.entity.User;
 
 
+import java.io.InputStream;
 import java.util.Map;
 
 
@@ -28,4 +29,14 @@ public interface UserService {
     public Map<String,Object> login(String username,String password,int expiretime);
 
     void logout(String ticket);
+    /**
+     * 文件上传
+     */
+    String upload(InputStream inputStream , String fileName);
+    /**
+     * 根据用户id 更改头像链接
+     */
+    int changepic(Integer id,String url);
+
+    boolean checkchangepassword(Integer id,String newpassword, String newpsagain);
 }

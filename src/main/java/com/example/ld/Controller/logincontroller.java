@@ -66,6 +66,14 @@ public class logincontroller implements ActivateState {
     }
 
     // http://localhost:8080/community/activation/id/code
+
+    /**
+     * 邮箱激活
+     * @param model
+     * @param id
+     * @param code
+     * @return
+     */
     @GetMapping("/activate/{id}/{code}")
     public String activateemail(Model model, @PathVariable("id") int id, @PathVariable("code") String code) {
         int result = userService.activateemail(id, code);
