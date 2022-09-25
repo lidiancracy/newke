@@ -15,5 +15,9 @@
         insert into discuss_post (<include refid="insertFields"/>)
         values(#{userId}, #{title}, #{content}, #{type}, #{status}, #{createTime}, #{commentCount}, #{score})
     </insert>
+    <select id="getallpost" resultType="com.example.ld.entity.DiscussPost">
+        select * from discuss_post
+    </select>
+
 
 </mapper>

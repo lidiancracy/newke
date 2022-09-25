@@ -40,11 +40,6 @@ public class logincontroller implements ActivateState {
         return "/site/register";
     }
 
-    @RequestMapping(path = {"/index", "/"}, method = RequestMethod.GET)
-    public String getindex() {
-        return "/index";
-    }
-
     @RequestMapping(path = "/login", method = RequestMethod.GET)
     public String getLoginPage() {
         return "/site/login";

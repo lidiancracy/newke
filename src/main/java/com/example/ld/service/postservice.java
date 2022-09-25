@@ -2,6 +2,8 @@ package com.example.ld.service;
 
 import com.example.ld.entity.DiscussPost;
 
+import java.util.List;
+
 /**
  * @ClassName postservice
  * @Description TODO
@@ -9,4 +11,9 @@ import com.example.ld.entity.DiscussPost;
  */
 public interface postservice {
     void addDiscussPost(DiscussPost post);
+
+    List<DiscussPost> getallpost();
+
+    List<DiscussPost> selectall();
+
 }

@@ -125,36 +125,43 @@
                     </div>
                 </div>
             </div>
-
             <!-- 帖子列表 -->
-<!--            <ul class="list-unstyled">-->
-<!--                <li class="media pb-3 pt-3 mb-3 border-bottom" th:each="map:${discussPosts}">-->
-<!--                    <a href="site/profile.html">-->
-<!--                        <img th:src="${map.user.headerUrl}" class="mr-4 rounded-circle" alt="用户头像"-->
-<!--                             style="width:50px;height:50px;">-->
-<!--                    </a>-->
-<!--                    <div class="media-body">-->
-<!--                        <h6 class="mt-0 mb-3">-->
-<!--                            <a href="#" th:utext="${map.post.title}">备战春招，面试题跟他复习，一个月全搞定！</a>-->
-<!--                            <span class="badge badge-secondary bg-primary" th:if="${map.post.type==1}">置顶</span>-->
-<!--                            <span class="badge badge-secondary bg-danger" th:if="${map.post.status==1}">精华</span>-->
-<!--                        </h6>-->
-<!--                        <div class="text-muted font-size-12">-->
-<!--                            <u class="mr-3" th:utext="${map.user.username}">寒江雪</u> 发布于 <b-->
-<!--                                th:text="${#dates.format(map.post.createTime,'yyyy-MM-dd HH:mm:ss')}">2019-04-15-->
-<!--                            15:32:18</b>-->
-<!--                            <ul class="d-inline float-right">-->
-<!--                                <li class="d-inline ml-2">赞 11</li>-->
-<!--                                <li class="d-inline ml-2">|</li>-->
-<!--                                <li class="d-inline ml-2">回帖 7</li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--            </ul>-->
+            <ul class="list-unstyled">
+                <li class="media pb-3 pt-3 mb-3 border-bottom" th:each="map:${discussPosts}">
+                    <a href="site/profile.html">
+                        <img th:src="${map.user.headerUrl}" class="mr-4 rounded-circle" alt="用户头像"
+                             style="width:50px;height:50px;">
+                    </a>
+                    <div class="media-body">
+                        <h6 class="mt-0 mb-3">
+                            <a href="#" th:utext="${map.post.title}">备战春招，面试题跟他复习，一个月全搞定！</a>
+                            <span class="badge badge-secondary bg-primary" th:if="${map.post.type==1}">置顶</span>
+                            <span class="badge badge-secondary bg-danger" th:if="${map.post.status==1}">精华</span>
+                        </h6>
+                        <div class="text-muted font-size-12">
+                            <u class="mr-3" th:utext="${map.user.username}">寒江雪</u> 发布于 <b
+                                th:text="${#dates.format(map.post.createTime,'yyyy-MM-dd HH:mm:ss')}">2019-04-15
+                            15:32:18</b>
+                            <ul class="d-inline float-right">
+                                <li class="d-inline ml-2">赞 11</li>
+                                <li class="d-inline ml-2">|</li>
+                                <li class="d-inline ml-2">回帖 7</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
             <!-- 分页 -->
-<!--            th:if="${page.rows>0}"-->
-            <nav class="mt-5" >
+            <ul class="pagination">
+                <li class="page-item" th:if="${pageInfo.pageNum!=1}"><a class="page-link" th:href="@{/(pageNum=1)}">首页</a></li>
+                <li class="page-item" th:if="${pageInfo.pageNum!=1}"><a class="page-link" th:href="@{/(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:${pageInfo.pages})}">上一页</a></li>
+                <li class="page-item"><a class="page-link"><span th:text="第+${pageInfo.pageNum}+页"></span></a></li>
+                <li class="page-item"><a class="page-link"><span th:text="共+${pageInfo.pages}+页"></span></a></li>
+                <li class="page-item" th:if="${pageInfo.pageNum != pageInfo.pages}"><a class="page-link" th:href="@{/(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}">下一页</a></li>
+                <li class="page-item" th:if="${pageInfo.pageNum != pageInfo.pages}"><a class="page-link" th:href="@{/(pageNum=${pageInfo.pages})}">尾页</a></li>
+            </ul>
+
+            <!--            <nav class="mt-5" th:if="${page.rows>0}">-->
 <!--                <ul class="pagination justify-content-center">-->
 <!--                    <li class="page-item">-->
 <!--                        <a class="page-link" th:href="@{${page.path}(current=1)}">首页</a>-->
@@ -172,7 +179,9 @@
 <!--                        <a class="page-link" th:href="@{${page.path}(current=${page.total})}">末页</a>-->
 <!--                    </li>-->
 <!--                </ul>-->
-            </nav>
+<!--            </nav>-->
+
+
         </div>
     </div>
 

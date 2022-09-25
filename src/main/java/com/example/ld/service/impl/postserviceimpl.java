@@ -5,6 +5,9 @@ import com.example.ld.mapper.postMapper;
 import com.example.ld.service.postservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.util.HtmlUtils;
+
+import java.util.List;
 
 /**
  * @ClassName postserviceimpl
@@ -17,6 +20,22 @@ public class postserviceimpl implements postservice {
     postMapper postmapper;
     @Override
     public void addDiscussPost(DiscussPost post) {
+        post.setTitle(HtmlUtils.htmlEscape(post.getTitle()) );
+        post.setContent(HtmlUtils.htmlEscape(post.getContent()));
         postmapper.insertDiscussPost(post);
+    }
+
+    /**
+     * 获取所有帖子
+     * @return
+     */
+    @Override
+    public List<DiscussPost> getallpost() {
+        return postmapper.getallpost();
+    }
+
+    @Override
+    public List<DiscussPost> selectall() {
+        return postmapper.getallpost();
     }
 }

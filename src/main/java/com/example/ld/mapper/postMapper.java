@@ -11,4 +11,7 @@ import java.util.List;
 public interface postMapper {
 
     int insertDiscussPost(DiscussPost discussPost);
+
+    List<DiscussPost> getallpost();
+
 }
