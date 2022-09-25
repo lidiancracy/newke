@@ -14,4 +14,5 @@ public interface postMapper {
 
     List<DiscussPost> getallpost();
 
+    DiscussPost getbyid(int postid);
 }

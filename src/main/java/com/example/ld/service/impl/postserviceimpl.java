@@ -38,4 +38,9 @@ public class postserviceimpl implements postservice {
     public List<DiscussPost> selectall() {
         return postmapper.getallpost();
     }
+
+    @Override
+    public DiscussPost getpostbyid(String postid) {
+        return postmapper.getbyid(Integer.parseInt(postid));
+    }
 }

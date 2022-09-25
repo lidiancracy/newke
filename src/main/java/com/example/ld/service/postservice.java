@@ -16,4 +16,5 @@ public interface postservice {
 
     List<DiscussPost> selectall();
 
+    DiscussPost getpostbyid(String postid);
 }

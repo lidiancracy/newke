@@ -7,13 +7,11 @@ import com.example.ld.service.postservice;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.el.util.ReflectionUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,7 +37,7 @@ public class indexcontroller {
     UserMapper userMapper;
     @RequestMapping("/")
     public String index(Model model, @RequestParam(defaultValue = "1") Integer pageNum) {
-        PageHelper.startPage(pageNum, 3);// pageNum:当前页码数，第一次进来时默认为1（首页）
+        PageHelper.startPage(pageNum, 5);// pageNum:当前页码数，第一次进来时默认为1（首页）
         List<DiscussPost> list = postservice.selectall();//list:页面要展示的数据的集合
         PageInfo<DiscussPost> pageInfo = new PageInfo<DiscussPost>(list);//pageInfo:将分页数据和显示的数据封装到PageInfo当中
         model.addAttribute("pageInfo", pageInfo);//将封装好的数据返回到前台页面
@@ -65,4 +63,17 @@ public class indexcontroller {
         return "index";
     }
 
+    /**
+     * 帖子详情页
+     */
+    @GetMapping("/postdetail/{postid}")
+    public String postdetail(@PathVariable("postid") String postid,Model model){
+        DiscussPost discussPost=postservice.getpostbyid(postid);
+        model.addAttribute("post",discussPost);
+        String userId = discussPost.getUserId();
+        User user = userMapper.selectById(Integer.parseInt(userId));
+        model.addAttribute("user",user);
+//        对应的html页面
+        return "/site/discuss-detail";
+    }
 }
