@@ -1,5 +1,6 @@
 package com.example.ld.service.impl;
 
+import com.example.ld.entity.Comment;
 import com.example.ld.entity.DiscussPost;
 import com.example.ld.mapper.postMapper;
 import com.example.ld.service.postservice;
@@ -42,5 +43,17 @@ public class postserviceimpl implements postservice {
     @Override
     public DiscussPost getpostbyid(String postid) {
         return postmapper.getbyid(Integer.parseInt(postid));
+    }
+
+    @Override
+    public List<Comment> selectall_1(String postid) {
+
+        return postmapper.selectall_1(Integer.parseInt(postid));
+    }
+
+    @Override
+    public int count(String postid) {
+
+        return postmapper.count(Integer.parseInt(postid) );
     }
 }

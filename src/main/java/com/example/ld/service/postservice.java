@@ -1,5 +1,6 @@
 package com.example.ld.service;
 
+import com.example.ld.entity.Comment;
 import com.example.ld.entity.DiscussPost;
 
 import java.util.List;
@@ -17,4 +18,8 @@ public interface postservice {
     List<DiscussPost> selectall();
 
     DiscussPost getpostbyid(String postid);
+
+    List<Comment> selectall_1(String postid);
+
+    int count(String postid);
 }

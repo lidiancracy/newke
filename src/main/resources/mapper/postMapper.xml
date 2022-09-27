@@ -21,6 +21,12 @@
     <select id="getbyid" resultType="com.example.ld.entity.DiscussPost">
         select * from discuss_post where id=#{postid}
     </select>
+    <select id="selectall_1" resultType="com.example.ld.entity.Comment">
+        select * from comment where entity_id=#{postid} and entity_type=0
+    </select>
+    <select id="count" resultType="java.lang.Integer">
+        select count(*) from comment where entity_id=#{parseInt}
+    </select>
 
 
 </mapper>

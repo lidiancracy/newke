@@ -35,7 +35,7 @@ public class indexcontroller {
     postservice postservice;
     @Autowired
     UserMapper userMapper;
-    @RequestMapping("/")
+    @RequestMapping({"/","/index"})
     public String index(Model model, @RequestParam(defaultValue = "1") Integer pageNum) {
         PageHelper.startPage(pageNum, 5);// pageNum:当前页码数，第一次进来时默认为1（首页）
         List<DiscussPost> list = postservice.selectall();//list:页面要展示的数据的集合
@@ -63,17 +63,5 @@ public class indexcontroller {
         return "index";
     }
 
-    /**
-     * 帖子详情页
-     */
-    @GetMapping("/postdetail/{postid}")
-    public String postdetail(@PathVariable("postid") String postid,Model model){
-        DiscussPost discussPost=postservice.getpostbyid(postid);
-        model.addAttribute("post",discussPost);
-        String userId = discussPost.getUserId();
-        User user = userMapper.selectById(Integer.parseInt(userId));
-        model.addAttribute("user",user);
-//        对应的html页面
-        return "/site/discuss-detail";
-    }
+
 }

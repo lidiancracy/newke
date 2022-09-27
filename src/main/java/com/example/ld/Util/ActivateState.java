@@ -20,4 +20,10 @@ public interface ActivateState {
      */
     public static final int default_exptime = 3600*24;
     public static final int remenber_exptime = 3600*24*100;
+    /**
+     * entity_type为0 表示在帖子下面回复
+     * entity_type为1 表示在帖子下面的用户回复下回复
+     */
+    public static final int entity_post = 0;
+    public static final int entity_underpost = 1;
 }
