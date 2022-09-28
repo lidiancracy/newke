@@ -22,4 +22,8 @@ public interface postservice {
     List<Comment> selectall_1(String postid);
 
     int count(String postid);
+
+    void addcomment(Integer id,String postid,String content);
+
+    void updatecount(String postid, int count);
 }

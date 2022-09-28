@@ -20,4 +20,8 @@ public interface postMapper {
     List<Comment> selectall_1(int postid);
 
     int count(int parseInt);
+
+    void addcomment(int id,int parseInt,String content,String time);
+
+    void updatecount(int parseInt, int count);
 }

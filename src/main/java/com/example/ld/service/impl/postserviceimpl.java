@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.util.HtmlUtils;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -55,5 +57,23 @@ public class postserviceimpl implements postservice {
     public int count(String postid) {
 
         return postmapper.count(Integer.parseInt(postid) );
+    }
+
+    /**
+     * 插入评论
+     * @param postid
+     */
+    @Override
+    public void addcomment(Integer id,String postid,String content) {
+        SimpleDateFormat sdf =
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String format = sdf.format(new Date());
+        postmapper.addcomment(id,Integer.parseInt(postid) ,content,format);
+
+    }
+
+    @Override
+    public void updatecount(String postid, int count) {
+         postmapper.updatecount(Integer.parseInt(postid) ,count);
     }
 }

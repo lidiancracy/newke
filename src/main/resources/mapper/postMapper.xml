@@ -15,6 +15,13 @@
         insert into discuss_post (<include refid="insertFields"/>)
         values(#{userId}, #{title}, #{content}, #{type}, #{status}, #{createTime}, #{commentCount}, #{score})
     </insert>
+<!--    插入评论-->
+    <insert id="addcomment"  >
+        insert into comment(user_id, entity_type, entity_id, content, create_time) VALUES (#{id},0,#{parseInt},#{content},#{time})
+    </insert>
+    <update id="updatecount">
+        update discuss_post set comment_count = #{count} where id=#{parseInt}
+    </update>
     <select id="getallpost" resultType="com.example.ld.entity.DiscussPost">
         select * from discuss_post order by create_time desc
     </select>

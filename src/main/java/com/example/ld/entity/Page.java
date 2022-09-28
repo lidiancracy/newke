@@ -55,7 +55,7 @@ public class Page {
 
     /**
      * 获取当前页的起始行
-     *
+     *  在分页sql语句中表示 跳过前 offeset条数据
      * @return
      */
     public int getOffset() {

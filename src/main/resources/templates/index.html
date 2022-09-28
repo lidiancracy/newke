@@ -135,8 +135,8 @@
                     </a>
                     <div class="media-body">
                         <h6 class="mt-0 mb-3">
-<!--                            点击跳转详情页-->
-                            <a th:href="@{ /postdetail(postid=${map.post.id}) }" th:utext="${map.post.title}">备战春招，面试题跟他复习，一个月全搞定！</a>
+<!--                            点击跳转详情页   -->
+                            <a th:href="@{| /postdetail/${map.post.id} |}" th:utext="${map.post.title}">备战春招，面试题跟他复习，一个月全搞定！</a>
                             <span class="badge badge-secondary bg-primary" th:if="${map.post.type==1}">置顶</span>
                             <span class="badge badge-secondary bg-danger" th:if="${map.post.status==1}">精华</span>
                         </h6>
@@ -154,6 +154,7 @@
                 </li>
             </ul>
             <!-- 分页 -->
+            <!-- 分页上下页 可以当成一个小工具前端后端都可以直接复制粘贴 -->
             <ul class="pagination">
                 <li class="page-item" th:if="${pageInfo.pageNum!=1}"><a class="page-link" th:href="@{/(pageNum=1)}">首页</a></li>
                 <li class="page-item" th:if="${pageInfo.pageNum!=1}"><a class="page-link" th:href="@{/(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:${pageInfo.pages})}">上一页</a></li>

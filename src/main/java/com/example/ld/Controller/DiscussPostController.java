@@ -6,8 +6,10 @@ import com.example.ld.Util.communityutil;
 import com.example.ld.Util.hostholder;
 import com.example.ld.entity.Comment;
 import com.example.ld.entity.DiscussPost;
+import com.example.ld.entity.Page;
 import com.example.ld.entity.User;
 import com.example.ld.mapper.UserMapper;
+import com.example.ld.service.CommentService;
 import com.example.ld.service.postservice;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -16,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -64,38 +67,62 @@ public class DiscussPostController implements ActivateState {
      */
     @Autowired
     UserMapper userMapper;
-    @GetMapping("/postdetail")
-    public String postdetail(@RequestParam String postid,@RequestParam(defaultValue =  "1") Integer pageNum,  Model model){
+    @Autowired
+    CommentService commentservice;
+    @GetMapping("/postdetail/{postid}")
+    public String postdetail(@PathVariable String postid,  Model model,Page page){
 //        根据帖子id查出帖子所有信息 上半部
         DiscussPost discussPost=postservice.getpostbyid(postid);
         User lz = userMapper.selectById( Integer.parseInt(discussPost.getUserId()));
-        int count=postservice.count(postid);
 
-//         帖子一级回复  下半部
-        PageHelper.startPage(pageNum,5);
-        List<Comment> comments =postservice.selectall_1(postid);
-        PageInfo<Comment> pageInfo = new PageInfo<Comment>(comments);
+        model.addAttribute("user",lz);
+        int count=postservice.count(postid);
+        postservice.updatecount(postid,count);
+        discussPost.setCommentCount(count);
+        model.addAttribute("post",discussPost);
         /**
-         * 根据postid查出再将评论分页所有评论
+         * 评论分页设置
+         * seltlimit 是设置每页几个
+         * setpath 是设置页面上下页跳转,路径永远不变，单参数一直变
+         * set rows 是设置一共多少条信息，用于计算各页信息
          */
-        ArrayList<HashMap<String, Object>> hashMaps = new ArrayList<>();
-        List<Comment> list = pageInfo.getList();
-        if(list!=null){
-//            如果这条post有评论
-            for (Comment comment : list) {
-//                需要封装一个 user 封装一个comment
-                HashMap<String, Object> tempmap = new HashMap<>();
-                User user = userMapper.selectById(comment.getUserId());
-                tempmap.put("comment",comment);
-                tempmap.put("user",user);
-                hashMaps.add(tempmap);
+        page.setLimit(5);
+        page.setPath("/postdetail/" + postid);
+        page.setRows(discussPost.getCommentCount());
+        /**
+         * 查询出每页的实体集合
+         * 渲染前端
+         */
+        List<Comment> commentList =commentservice.findcommentlist_page(
+                YIJI_TITLE, postid, page.getOffset(), page.getLimit());
+        ArrayList<HashMap<String, Object>> comments = new ArrayList<>();
+        if(commentList != null && !commentList.isEmpty()){
+            for (Comment comment : commentList) {
+                Integer userId = comment.getUserId();
+                User user = userMapper.selectById(userId);
+                HashMap<String, Object> cvo = new HashMap<>();
+                if(user!=null){
+                    cvo.put("user",user);
+                }
+                cvo.put("comment",comment);
+                comments.add(cvo);
             }
         }
-        model.addAttribute("comments",hashMaps);
-        model.addAttribute("post",discussPost);
-        model.addAttribute("user",lz);
-//        model.addAttribute("replyCount",count);
-        model.addAttribute("pageInfo",pageInfo);
+        model.addAttribute("comments",comments);
         return "/site/discuss-detail";
+    }
+
+
+    /**
+     * 添加评论，添加完毕后
+     * 重定向 渲染
+     */
+    @Autowired
+    hostholder hostholder;
+    @PostMapping("/addacomment")
+    public String addcomment(String postid, String content){
+        Integer id = hostholder.getUser().getId();
+        postservice.addcomment(id,postid,content);
+        return "redirect:/postdetail/"+postid;
     }
 }

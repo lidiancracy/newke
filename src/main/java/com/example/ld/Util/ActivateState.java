@@ -24,6 +24,6 @@ public interface ActivateState {
      * entity_type为0 表示在帖子下面回复
      * entity_type为1 表示在帖子下面的用户回复下回复
      */
-    public static final int entity_post = 0;
-    public static final int entity_underpost = 1;
+    public static final int YIJI_TITLE = 0;
+    public static final int ERJI_TITLE = 1;
 }
