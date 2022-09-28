@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ld.mapper.MessageMapper">
+
+
+    <select id="msgcount" resultType="java.lang.Integer">
+        select count(m.maxid)
+        from (
+                 select max(id) as maxid
+                 from message
+                 where (from_id = #{id} or to_id = #{id})
+                 group by conversation_id
+             ) as m
+    </select>
+    <select id="findlist" resultType="com.example.ld.entity.Message">
+
+        SELECT *
+        from message
+        WHERE id in (select max(id)
+                     from message
+                     where (from_id = #{id} or to_id = #{id})
+                     group by conversation_id)
+        limit #{offset}, #{limit}
+    </select>
+    <select id="unread" resultType="java.lang.Integer">
+        select count(*) from message where conversation_id=#{conversationId} and status=0
+    </select>
+    <select id="eachcount" resultType="java.lang.Integer">
+        select  count(*) from  message where conversation_id=#{conversationId}
+    </select>
+</mapper>

@@ -17,7 +17,6 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class Message {
 
     private Integer id;

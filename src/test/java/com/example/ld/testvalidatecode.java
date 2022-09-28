@@ -4,6 +4,7 @@ package com.example.ld;
 import com.example.ld.entity.Comment;
 import com.example.ld.entity.LoginTicket;
 import com.example.ld.mapper.LoginTicketMapper;
+import com.example.ld.mapper.MessageMapper;
 import com.example.ld.service.CommentService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,13 +13,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 import java.util.concurrent.CompletionException;
+import java.util.zip.CheckedOutputStream;
 
 /**
  * @ClassName testvalidatecode
  * @Description TODO
  * @Date 2022/9/19 17:29
  */
-@SpringBootTest
+@SpringBootTest(classes = LdApplication.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class testvalidatecode {
     @Autowired
     LoginTicketMapper loginTicketMapper;
@@ -53,5 +55,15 @@ public class testvalidatecode {
         for (Comment comment : comments) {
             System.out.println(comment);
         }
+    }
+    /**
+     * test 私信count
+     */
+    @Autowired
+    MessageMapper messageMapper;
+    @Test
+    public void test2(){
+        int msgcount = messageMapper.msgcount(8);
+        System.out.println(msgcount);
     }
 }
