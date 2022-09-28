@@ -25,9 +25,26 @@
         limit #{offset}, #{limit}
     </select>
     <select id="unread" resultType="java.lang.Integer">
-        select count(*) from message where conversation_id=#{conversationId} and status=0
+        select count(*)
+        from message
+        where conversation_id = #{conversationId}
+          and status = 0
     </select>
     <select id="eachcount" resultType="java.lang.Integer">
-        select  count(*) from  message where conversation_id=#{conversationId}
+        select count(*)
+        from message
+        where conversation_id = #{conversationId}
+    </select>
+    <select id="getallbyconvid" resultType="com.example.ld.entity.Message">
+        select *
+        from message
+        where conversation_id = #{conversationId}
+        order by message.create_time desc;
+    </select>
+    <select id="getallbyconvid_fenye" resultType="com.example.ld.entity.Message">
+        select *
+        from message
+        where conversation_id = #{conversationId}
+        order by message.create_time desc limit #{offset} , #{limit}
     </select>
 </mapper>

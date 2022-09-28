@@ -62,5 +62,21 @@ public class Msgservimpl implements MSGService {
         return messageMapper.eachcount(conversationId);
     }
 
+    /**
+     * 获取所有该会话的对话
+     * @param conversationId
+     * @return
+     */
+    @Override
+    public List<Message> selectallby_convid(String conversationId) {
+
+        return messageMapper.getallbyconvid(conversationId);
+    }
+
+    @Override
+    public List<Message> selectallby_convid_fenye(String conversationId, int limit, int offset) {
+        return messageMapper.getallbyconvid_fenye(conversationId,limit,offset);
+    }
+
 
 }

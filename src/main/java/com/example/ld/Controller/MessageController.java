@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -77,5 +78,38 @@ public class MessageController implements ActivateState {
         return "/site/letter";
     }
 
+    /**
+     * 私信详情
+     * @param conversationId
+     * @return
+     */
+    @GetMapping("/letter/detail/{conversationId}")
+    public String getdetail(@PathVariable String conversationId,Model model,Page page){
+        /**
+         * targeg信息显示
+         *   list letters
+         *   每个letter
+         *
+         */
+        User user = hostholder.getUser();
+        model.addAttribute("target",user);
+        page.setLimit(2);
+        page.setPath("/letter/detail/"+conversationId);
+        List<Message> messageList=msgService.selectallby_convid(conversationId);
+        page.setRows(messageList.size());
+        List<Message> messageList2=msgService.selectallby_convid_fenye(conversationId,page.getLimit(),page.getOffset());
+        ArrayList<HashMap<String, Object>> letters = new ArrayList<>();
+        if(messageList2!=null && !messageList2.isEmpty()){
+            for (Message message : messageList2) {
+                User user1 = userMapper.selectById(message.getFromId());
+                HashMap<String, Object> map = new HashMap<>();
+                map.put("fromUser",user1);
+                map.put("letter",message);
+                letters.add(map);
+            }
+        }
+        model.addAttribute("letters",letters);
 
+        return "/site/letter-detail";
+    }
 }

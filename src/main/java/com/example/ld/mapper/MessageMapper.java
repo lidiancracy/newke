@@ -24,4 +24,9 @@ public interface MessageMapper  {
     int unread(String conversationId);
 
     int eachcount(String conversationId);
+
+    List<Message> getallbyconvid(String conversationId);
+
+
+    List<Message> getallbyconvid_fenye(String conversationId, int limit, int offset);
 }

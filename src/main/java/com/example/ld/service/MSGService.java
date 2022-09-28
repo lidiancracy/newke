@@ -21,4 +21,8 @@ public interface MSGService {
     int getunreadcount(String conversationId);
 
     int eachcount(String conversationId);
+
+    List<Message> selectallby_convid(String conversationId);
+
+    List<Message> selectallby_convid_fenye(String conversationId, int limit, int offset);
 }
