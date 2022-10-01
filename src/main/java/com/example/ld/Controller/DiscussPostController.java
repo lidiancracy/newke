@@ -2,8 +2,10 @@ package com.example.ld.Controller;
 
 
 import com.example.ld.Util.ActivateState;
+import com.example.ld.Util.RedisKeyUtil;
 import com.example.ld.Util.communityutil;
 import com.example.ld.Util.hostholder;
+import com.example.ld.annociation.loginrequired;
 import com.example.ld.entity.Comment;
 import com.example.ld.entity.DiscussPost;
 import com.example.ld.entity.Page;
@@ -15,6 +17,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -37,6 +40,7 @@ public class DiscussPostController implements ActivateState {
 
     /**
      * 发帖子
+     *
      * @param title
      * @param content
      * @return
@@ -61,6 +65,7 @@ public class DiscussPostController implements ActivateState {
 
     /**
      * 帖子详情页
+     *
      * @param postid
      * @param model
      * @return
@@ -69,17 +74,34 @@ public class DiscussPostController implements ActivateState {
     UserMapper userMapper;
     @Autowired
     CommentService commentservice;
+    @Autowired
+    RedisTemplate redisTemplate;
+    @Autowired
+    hostholder hostholder;
     @GetMapping("/postdetail/{postid}")
-    public String postdetail(@PathVariable String postid,  Model model,Page page){
+    public String postdetail(@PathVariable String postid, Model model, Page page) {
 //        根据帖子id查出帖子所有信息 上半部
-        DiscussPost discussPost=postservice.getpostbyid(postid);
-        User lz = userMapper.selectById( Integer.parseInt(discussPost.getUserId()));
+        DiscussPost discussPost = postservice.getpostbyid(postid);
+        User lz = userMapper.selectById(Integer.parseInt(discussPost.getUserId()));
 
-        model.addAttribute("user",lz);
-        int count=postservice.count(postid);
-        postservice.updatecount(postid,count);
+        model.addAttribute("user", lz);
+        int count = postservice.count(postid);
+        postservice.updatecount(postid, count);
         discussPost.setCommentCount(count);
-        model.addAttribute("post",discussPost);
+        model.addAttribute("post", discussPost);
+
+//        likeStatus likeCount 传一下 ，每次刷新页面显示
+        String entityLikeKey = RedisKeyUtil.getEntityLikeKey(1,Integer.parseInt(postid) );
+        Long size = redisTemplate.opsForSet().size(entityLikeKey);
+        int likestate=0;
+        if(hostholder.getUser()!=null){
+            if(redisTemplate.opsForSet().isMember(entityLikeKey,hostholder.getUser().getId())){
+                likestate=1;
+            }
+        }
+
+        model.addAttribute("likeStatus",likestate);
+        model.addAttribute("likeCount",size);
         /**
          * 评论分页设置
          * seltlimit 是设置每页几个
@@ -93,22 +115,22 @@ public class DiscussPostController implements ActivateState {
          * 查询出每页的实体集合
          * 渲染前端
          */
-        List<Comment> commentList =commentservice.findcommentlist_page(
+        List<Comment> commentList = commentservice.findcommentlist_page(
                 YIJI_TITLE, postid, page.getOffset(), page.getLimit());
         ArrayList<HashMap<String, Object>> comments = new ArrayList<>();
-        if(commentList != null && !commentList.isEmpty()){
+        if (commentList != null && !commentList.isEmpty()) {
             for (Comment comment : commentList) {
                 Integer userId = comment.getUserId();
                 User user = userMapper.selectById(userId);
                 HashMap<String, Object> cvo = new HashMap<>();
-                if(user!=null){
-                    cvo.put("user",user);
+                if (user != null) {
+                    cvo.put("user", user);
                 }
-                cvo.put("comment",comment);
+                cvo.put("comment", comment);
                 comments.add(cvo);
             }
         }
-        model.addAttribute("comments",comments);
+        model.addAttribute("comments", comments);
         return "/site/discuss-detail";
     }
 
@@ -117,12 +139,13 @@ public class DiscussPostController implements ActivateState {
      * 添加评论，添加完毕后
      * 重定向 渲染
      */
-    @Autowired
-    hostholder hostholder;
+
+
+    @loginrequired
     @PostMapping("/addacomment")
-    public String addcomment(String postid, String content){
+    public String addcomment(String postid, String content) {
         Integer id = hostholder.getUser().getId();
-        postservice.addcomment(id,postid,content);
-        return "redirect:/postdetail/"+postid;
+        postservice.addcomment(id, postid, content);
+        return "redirect:/postdetail/" + postid;
     }
 }

@@ -1,0 +1,526 @@
+2022-09-30 16:50:05.283  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 6884 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 16:50:05.310  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 16:50:06.454  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 16:50:06.461  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 16:50:06.509  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2022-09-30 16:50:07.919  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 16:50:07.920  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 16:50:07.921  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 16:50:07.921  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 16:50:07.948  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 16:50:07.961  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 16:50:07.962  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 16:50:07.963  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 16:50:08.154  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 16:50:08.154  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 2813 ms
+2022-09-30 16:50:08.536  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 16:50:08.901  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 16:50:10.535  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 16:50:11.819  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 16:50:11.851  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 53769 (http) with context path ''
+2022-09-30 16:50:11.868  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 7.378 seconds (JVM running for 8.942)
+2022-09-30 16:50:13.694  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 16:50:13.695  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 16:51:45.337  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 17228 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 16:51:45.339  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 16:51:46.411  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 16:51:46.416  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 16:51:46.465  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-09-30 16:51:47.743  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 16:51:47.745  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 16:51:47.746  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 16:51:47.746  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 16:51:47.750  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 16:51:47.771  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 16:51:47.772  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 16:51:47.773  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 16:51:47.985  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 16:51:47.986  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 2621 ms
+2022-09-30 16:51:48.307  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 16:51:48.564  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 16:51:50.204  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 16:51:51.525  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 16:51:51.553  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 53944 (http) with context path ''
+2022-09-30 16:51:51.569  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 6.772 seconds (JVM running for 8.169)
+2022-09-30 16:51:53.276  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 16:51:53.278  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 16:53:22.727  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 9820 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 16:53:22.728  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 16:53:23.501  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 16:53:23.505  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 16:53:23.539  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-30 16:53:24.477  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 16:53:24.478  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 16:53:24.479  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 16:53:24.479  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 16:53:24.482  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 16:53:24.493  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 16:53:24.494  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 16:53:24.494  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 16:53:24.620  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 16:53:24.621  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1873 ms
+2022-09-30 16:53:24.830  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 16:53:25.010  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 16:53:26.002  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 16:53:26.892  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 16:53:26.915  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 54043 (http) with context path ''
+2022-09-30 16:53:26.927  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.65 seconds (JVM running for 5.615)
+2022-09-30 16:53:28.214  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 16:53:28.215  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 16:55:40.605  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 6532 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 16:55:40.606  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 16:55:41.460  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 16:55:41.464  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 16:55:41.500  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2022-09-30 16:55:42.417  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 16:55:42.419  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 16:55:42.419  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 16:55:42.419  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 16:55:42.422  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 16:55:42.435  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 16:55:42.435  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 16:55:42.436  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 16:55:42.572  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 16:55:42.572  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1947 ms
+2022-09-30 16:55:42.795  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 16:55:42.978  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 16:55:44.059  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 16:55:44.970  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 16:55:44.991  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 54163 (http) with context path ''
+2022-09-30 16:55:45.002  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.828 seconds (JVM running for 5.751)
+2022-09-30 16:55:46.393  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 16:55:46.394  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:00:42.448  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 20676 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:00:42.450  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:00:43.165  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:00:43.169  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:00:43.203  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:00:44.211  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:00:44.213  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:00:44.213  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:00:44.214  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:00:44.216  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:00:44.226  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:00:44.227  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:00:44.227  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:00:44.365  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:00:44.365  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1897 ms
+2022-09-30 17:00:44.593  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:00:44.777  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:00:45.946  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:00:47.048  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:00:47.082  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 54409 (http) with context path ''
+2022-09-30 17:00:47.097  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 5.108 seconds (JVM running for 6.016)
+2022-09-30 17:00:48.568  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:00:48.569  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:03:32.714  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 19832 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:03:32.716  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:03:33.470  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:03:33.474  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:03:33.513  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:03:34.459  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:03:34.460  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:03:34.461  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:03:34.461  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:03:34.464  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:03:34.476  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:03:34.476  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:03:34.477  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:03:34.608  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:03:34.608  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1873 ms
+2022-09-30 17:03:34.835  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:03:35.031  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:03:36.028  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:03:36.897  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:03:36.919  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 54546 (http) with context path ''
+2022-09-30 17:03:36.931  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.659 seconds (JVM running for 5.705)
+2022-09-30 17:03:38.307  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:03:38.308  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:03:57.579  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 19732 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:03:57.581  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:03:58.289  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:03:58.293  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:03:58.329  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:03:59.263  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:03:59.264  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:03:59.265  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:03:59.265  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:03:59.268  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:03:59.280  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:03:59.280  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:03:59.281  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:03:59.412  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:03:59.412  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1814 ms
+2022-09-30 17:03:59.619  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:03:59.783  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:04:00.792  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:04:01.666  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:04:01.692  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 54603 (http) with context path ''
+2022-09-30 17:04:01.703  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.509 seconds (JVM running for 5.504)
+2022-09-30 17:04:03.048  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:04:03.049  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:06:52.473  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 12476 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:06:52.474  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:06:53.321  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:06:53.324  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:06:53.358  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:06:54.332  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:06:54.333  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:06:54.334  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:06:54.334  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:06:54.337  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:06:54.350  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:06:54.351  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:06:54.351  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:06:54.500  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:06:54.500  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 2003 ms
+2022-09-30 17:06:54.722  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:06:54.911  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:06:55.932  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:06:56.813  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:06:56.836  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 54801 (http) with context path ''
+2022-09-30 17:06:56.848  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.804 seconds (JVM running for 5.746)
+2022-09-30 17:06:58.224  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:06:58.234  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:12:00.088  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 17412 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:12:00.089  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:12:00.941  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:12:00.943  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:12:00.974  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:12:01.901  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:12:01.902  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:12:01.902  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:12:01.903  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:12:01.906  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:12:01.918  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:12:01.919  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:12:01.919  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:12:02.059  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:12:02.059  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1952 ms
+2022-09-30 17:12:02.285  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:12:02.443  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:12:03.663  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:12:04.676  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:12:04.700  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 54996 (http) with context path ''
+2022-09-30 17:12:04.711  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 5.044 seconds (JVM running for 6.068)
+2022-09-30 17:12:06.063  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:12:06.065  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:13:28.376  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 10580 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:13:28.378  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:13:29.291  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:13:29.297  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:13:29.337  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:13:30.452  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:13:30.454  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:13:30.454  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:13:30.454  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:13:30.457  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:13:30.470  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:13:30.471  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:13:30.471  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:13:30.600  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:13:30.600  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 2203 ms
+2022-09-30 17:13:30.816  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:13:30.980  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:13:32.115  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:13:33.175  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:13:33.192  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 55091 (http) with context path ''
+2022-09-30 17:13:33.202  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 5.222 seconds (JVM running for 6.174)
+2022-09-30 17:13:34.569  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:13:34.571  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:14:46.375  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 20272 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:14:46.377  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:14:47.160  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:14:47.165  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:14:47.212  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:14:48.206  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:14:48.207  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:14:48.208  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:14:48.208  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:14:48.211  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:14:48.224  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:14:48.225  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:14:48.225  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:14:48.340  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:14:48.340  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1945 ms
+2022-09-30 17:14:48.540  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:14:48.720  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:14:49.762  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:14:50.668  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:14:50.693  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 55194 (http) with context path ''
+2022-09-30 17:14:50.703  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.79 seconds (JVM running for 5.995)
+2022-09-30 17:14:52.014  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:14:52.015  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:21:19.194  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 20988 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:21:19.196  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:21:19.993  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:21:19.996  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:21:20.032  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:21:20.984  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:21:20.985  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:21:20.985  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:21:20.986  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:21:20.988  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:21:21.000  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:21:21.001  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:21:21.001  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:21:21.137  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:21:21.137  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1921 ms
+2022-09-30 17:21:21.464  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:21:21.718  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:21:22.895  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:21:23.763  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:21:23.785  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 55446 (http) with context path ''
+2022-09-30 17:21:23.794  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 5.01 seconds (JVM running for 6.063)
+2022-09-30 17:21:25.116  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:21:25.117  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:22:01.931  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 14628 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:22:01.933  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:22:02.750  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:22:02.755  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:22:02.792  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:22:03.886  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:22:03.888  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:22:03.889  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:22:03.889  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:22:03.892  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:22:03.904  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:22:03.904  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:22:03.904  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:22:04.045  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:22:04.045  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 2090 ms
+2022-09-30 17:22:04.302  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:22:04.479  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:22:05.540  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:22:06.356  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:22:06.378  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 55507 (http) with context path ''
+2022-09-30 17:22:06.389  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.888 seconds (JVM running for 5.811)
+2022-09-30 17:22:07.765  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:22:07.766  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:29:22.772  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 8700 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:29:22.774  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:29:23.551  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:29:23.558  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:29:23.604  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:29:24.592  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:29:24.593  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:29:24.593  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:29:24.594  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:29:24.596  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:29:24.607  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:29:24.608  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:29:24.608  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:29:24.734  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:29:24.735  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1939 ms
+2022-09-30 17:29:24.975  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:29:25.163  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:29:26.170  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:29:27.063  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:29:27.093  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 55820 (http) with context path ''
+2022-09-30 17:29:27.104  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.82 seconds (JVM running for 5.976)
+2022-09-30 17:29:28.676  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:29:28.677  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:29:51.372  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 19812 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:29:51.374  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:29:52.093  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:29:52.096  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:29:52.128  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:29:53.053  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:29:53.054  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:29:53.055  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:29:53.055  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:29:53.058  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:29:53.070  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:29:53.071  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:29:53.071  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:29:53.198  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:29:53.198  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1806 ms
+2022-09-30 17:29:53.430  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:29:53.599  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:29:54.611  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:29:55.478  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:29:55.500  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 56712 (http) with context path ''
+2022-09-30 17:29:55.511  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.534 seconds (JVM running for 5.509)
+2022-09-30 17:29:56.890  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:29:56.891  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:31:26.082  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 14240 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:31:26.084  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:31:26.898  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:31:26.902  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:31:26.935  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:31:27.936  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:31:27.937  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:31:27.938  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:31:27.938  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:31:27.940  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:31:27.951  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:31:27.951  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:31:27.952  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:31:28.076  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:31:28.076  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1969 ms
+2022-09-30 17:31:28.317  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:31:28.516  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:31:29.607  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:31:30.527  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:31:30.552  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 56819 (http) with context path ''
+2022-09-30 17:31:30.562  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.911 seconds (JVM running for 5.793)
+2022-09-30 17:31:31.909  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:31:31.910  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:32:10.360  INFO   [main           ]  com.example.ld.redis_test                          :  Starting redis_test using Java 11.0.12 on LAPTOP-VTI99V7I with PID 20868 (started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:32:10.362  INFO   [main           ]  com.example.ld.redis_test                          :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:32:11.223  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:32:11.229  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:32:11.276  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:32:12.301  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 0 (http)
+2022-09-30 17:32:12.303  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:32:12.303  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:32:12.303  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:32:12.306  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:32:12.316  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:32:12.317  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:32:12.317  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:32:12.448  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:32:12.448  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 2067 ms
+2022-09-30 17:32:12.661  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:32:12.808  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:32:13.841  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:32:14.682  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-auto-1"]
+2022-09-30 17:32:14.701  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 56884 (http) with context path ''
+2022-09-30 17:32:14.711  INFO   [main           ]  com.example.ld.redis_test                          :  Started redis_test in 4.767 seconds (JVM running for 5.653)
+2022-09-30 17:32:16.017  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 17:32:16.018  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-09-30 17:55:17.088  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 4732 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-09-30 17:55:17.091  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-09-30 17:55:17.966  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-09-30 17:55:17.970  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 17:55:18.000  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-09-30 17:55:18.771  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-09-30 17:55:18.772  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-09-30 17:55:18.772  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-09-30 17:55:18.773  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-30 17:55:18.775  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-09-30 17:55:18.788  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-30 17:55:18.788  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-09-30 17:55:18.789  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-30 17:55:18.881  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-09-30 17:55:18.881  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1721 ms
+2022-09-30 17:55:19.030  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-09-30 17:55:19.137  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-09-30 17:55:19.873  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-09-30 17:55:20.233  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-09-30 17:55:20.267  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-30 17:55:20.278  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 3.856 seconds (JVM running for 5.748)
+2022-09-30 17:55:23.469  INFO   [nio-8080-exec-1]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-30 17:55:23.470  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-09-30 17:55:23.471  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 1 ms
+2022-09-30 17:55:23.970  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:23.983  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=11, userId=8, title=213, content=123, type=null, status=null, createTime=Sun Sep 25 18:38:59 CST 2022, commentCount=0, score=null)
+2022-09-30 17:55:23.987  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:23.987  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=10, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:53 CST 2022, commentCount=null, score=null)
+2022-09-30 17:55:23.989  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:23.989  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=9, userId=8, title=123, content=23, type=null, status=null, createTime=Sun Sep 25 18:38:45 CST 2022, commentCount=null, score=null)
+2022-09-30 17:55:23.991  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:23.992  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=8, userId=8, title=123, content=213, type=null, status=null, createTime=Sun Sep 25 18:38:40 CST 2022, commentCount=null, score=null)
+2022-09-30 17:55:23.994  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:23.994  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=7, userId=8, title=2, content=2, type=null, status=null, createTime=Sun Sep 25 18:38:35 CST 2022, commentCount=null, score=null)
+2022-09-30 17:55:28.750  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:28.750  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=6, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:30 CST 2022, commentCount=null, score=null)
+2022-09-30 17:55:28.752  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:28.752  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=5, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:24 CST 2022, commentCount=null, score=null)
+2022-09-30 17:55:28.754  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:28.754  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=4, userId=8, title=324, content=453, type=null, status=null, createTime=Sun Sep 25 14:36:53 CST 2022, commentCount=null, score=null)
+2022-09-30 17:55:28.756  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:28.757  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=3, userId=8, title=123, content=4324, type=null, status=null, createTime=Sun Sep 25 14:36:47 CST 2022, commentCount=27, score=null)
+2022-09-30 17:55:28.758  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:55:28.759  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=2, userId=8, title=21313, content=123321, type=null, status=null, createTime=Sun Sep 25 14:36:42 CST 2022, commentCount=null, score=null)
+2022-09-30 17:59:18.931  INFO   [nio-8080-exec-1]  com.example.ld.Controller.logincontroller          :  R6MP
+2022-09-30 17:59:18.966  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:18.967  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=11, userId=8, title=213, content=123, type=null, status=null, createTime=Sun Sep 25 18:38:59 CST 2022, commentCount=0, score=null)
+2022-09-30 17:59:18.968  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:18.968  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=10, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:53 CST 2022, commentCount=null, score=null)
+2022-09-30 17:59:18.969  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:18.969  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=9, userId=8, title=123, content=23, type=null, status=null, createTime=Sun Sep 25 18:38:45 CST 2022, commentCount=null, score=null)
+2022-09-30 17:59:18.971  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:18.971  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=8, userId=8, title=123, content=213, type=null, status=null, createTime=Sun Sep 25 18:38:40 CST 2022, commentCount=null, score=null)
+2022-09-30 17:59:18.972  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:18.973  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=7, userId=8, title=2, content=2, type=null, status=null, createTime=Sun Sep 25 18:38:35 CST 2022, commentCount=null, score=null)
+2022-09-30 17:59:22.252  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:22.253  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=6, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:30 CST 2022, commentCount=null, score=null)
+2022-09-30 17:59:22.254  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:22.254  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=5, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:24 CST 2022, commentCount=null, score=null)
+2022-09-30 17:59:22.256  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:22.256  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=4, userId=8, title=324, content=453, type=null, status=null, createTime=Sun Sep 25 14:36:53 CST 2022, commentCount=null, score=null)
+2022-09-30 17:59:22.257  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:22.257  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=3, userId=8, title=123, content=4324, type=null, status=null, createTime=Sun Sep 25 14:36:47 CST 2022, commentCount=27, score=null)
+2022-09-30 17:59:22.259  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 17:59:22.259  INFO   [nio-8080-exec-4]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=2, userId=8, title=21313, content=123321, type=null, status=null, createTime=Sun Sep 25 14:36:42 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:40.323  INFO   [nio-8080-exec-3]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 18:00:40.327  INFO   [nio-8080-exec-3]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2022-09-30 18:00:42.228  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:42.228  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=11, userId=8, title=213, content=123, type=null, status=null, createTime=Sun Sep 25 18:38:59 CST 2022, commentCount=0, score=null)
+2022-09-30 18:00:42.231  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:42.231  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=10, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:53 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:42.233  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:42.234  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=9, userId=8, title=123, content=23, type=null, status=null, createTime=Sun Sep 25 18:38:45 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:42.236  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:42.236  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=8, userId=8, title=123, content=213, type=null, status=null, createTime=Sun Sep 25 18:38:40 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:42.239  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:42.239  INFO   [nio-8080-exec-2]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=7, userId=8, title=2, content=2, type=null, status=null, createTime=Sun Sep 25 18:38:35 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:43.374  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:43.374  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=6, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:30 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:43.376  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:43.377  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=5, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:24 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:43.379  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:43.379  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=4, userId=8, title=324, content=453, type=null, status=null, createTime=Sun Sep 25 14:36:53 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:43.381  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:43.381  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=3, userId=8, title=123, content=4324, type=null, status=null, createTime=Sun Sep 25 14:36:47 CST 2022, commentCount=28, score=null)
+2022-09-30 18:00:43.384  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:43.384  INFO   [nio-8080-exec-7]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=2, userId=8, title=21313, content=123321, type=null, status=null, createTime=Sun Sep 25 14:36:42 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:50.365  INFO   [nio-8080-exec-1]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 18:00:50.370  INFO   [nio-8080-exec-1]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2022-09-30 18:00:50.446  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:50.446  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=11, userId=8, title=213, content=123, type=null, status=null, createTime=Sun Sep 25 18:38:59 CST 2022, commentCount=0, score=null)
+2022-09-30 18:00:50.448  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:50.448  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=10, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:53 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:50.450  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:50.450  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=9, userId=8, title=123, content=23, type=null, status=null, createTime=Sun Sep 25 18:38:45 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:50.452  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:50.452  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=8, userId=8, title=123, content=213, type=null, status=null, createTime=Sun Sep 25 18:38:40 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:50.454  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:50.454  INFO   [nio-8080-exec-1]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=7, userId=8, title=2, content=2, type=null, status=null, createTime=Sun Sep 25 18:38:35 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:51.860  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:51.860  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=6, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:30 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:51.862  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:51.862  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=5, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:24 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:51.863  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:51.864  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=4, userId=8, title=324, content=453, type=null, status=null, createTime=Sun Sep 25 14:36:53 CST 2022, commentCount=null, score=null)
+2022-09-30 18:00:51.865  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:51.865  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=3, userId=8, title=123, content=4324, type=null, status=null, createTime=Sun Sep 25 14:36:47 CST 2022, commentCount=28, score=null)
+2022-09-30 18:00:51.867  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 18:00:51.867  INFO   [nio-8080-exec-3]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=2, userId=8, title=21313, content=123321, type=null, status=null, createTime=Sun Sep 25 14:36:42 CST 2022, commentCount=2, score=null)
+2022-09-30 18:02:51.604  INFO   [nio-8080-exec-2]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 18:02:51.608  INFO   [nio-8080-exec-2]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2022-09-30 19:04:34.479  INFO   [nio-8080-exec-8]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-30 19:04:34.483  INFO   [nio-8080-exec-8]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2022-09-30 19:04:34.541  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:34.541  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=11, userId=8, title=213, content=123, type=null, status=null, createTime=Sun Sep 25 18:38:59 CST 2022, commentCount=0, score=null)
+2022-09-30 19:04:34.542  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:34.543  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=10, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:53 CST 2022, commentCount=null, score=null)
+2022-09-30 19:04:34.544  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:34.544  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=9, userId=8, title=123, content=23, type=null, status=null, createTime=Sun Sep 25 18:38:45 CST 2022, commentCount=null, score=null)
+2022-09-30 19:04:34.546  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:34.547  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=8, userId=8, title=123, content=213, type=null, status=null, createTime=Sun Sep 25 18:38:40 CST 2022, commentCount=null, score=null)
+2022-09-30 19:04:34.548  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:34.548  INFO   [nio-8080-exec-8]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=7, userId=8, title=2, content=2, type=null, status=null, createTime=Sun Sep 25 18:38:35 CST 2022, commentCount=null, score=null)
+2022-09-30 19:04:37.364  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:37.364  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=6, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:30 CST 2022, commentCount=null, score=null)
+2022-09-30 19:04:37.366  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:37.366  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=5, userId=8, title=1, content=1, type=null, status=null, createTime=Sun Sep 25 18:38:24 CST 2022, commentCount=null, score=null)
+2022-09-30 19:04:37.367  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:37.367  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=4, userId=8, title=324, content=453, type=null, status=null, createTime=Sun Sep 25 14:36:53 CST 2022, commentCount=null, score=null)
+2022-09-30 19:04:37.368  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:37.369  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=3, userId=8, title=123, content=4324, type=null, status=null, createTime=Sun Sep 25 14:36:47 CST 2022, commentCount=28, score=null)
+2022-09-30 19:04:37.370  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  User(id=8, username=123, password=5f6a849c3b98904ec1aebc3a54ccb0e1, salt=c0e91, email=1960870058@qq.com, type=0, status=1, activationCode=62102e6b5eb848b192f9463aa8d75266, headerUrl=http://images.nowcoder.com/head/624t.png, createTime=Fri Sep 23 17:24:56 CST 2022)
+2022-09-30 19:04:37.370  INFO   [nio-8080-exec-9]  com.example.ld.Controller.indexcontroller          :  DiscussPost(id=2, userId=8, title=21313, content=123321, type=null, status=null, createTime=Sun Sep 25 14:36:42 CST 2022, commentCount=2, score=null)
+2022-09-30 20:34:08.983  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-09-30 20:34:08.985  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed

@@ -32,4 +32,10 @@ public interface ActivateState {
      */
     public static final int MSG_YIDU = 1;
     public static final int MSG_WD = 0;
+    /**
+     * 1表示post like
+     * 2表示回复点赞
+     */
+    public static final int LIKE_TYPE_POST = 1;
+    public static final int LIKE_TYPE_MSG = 2;
 }
