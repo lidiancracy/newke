@@ -13,8 +13,8 @@ public class RedisKeyUtil {
     }
 
     // 某个用户的赞
-    // like:user:userId -> int
-//    public static String getUserLikeKey( int userId){
-//        return PREFIX_USER_LIKE + SPLIT+ entityType+ SPLIT + userId;
-//    }
+//     like:user:userId -> int
+    public static String getUserLikeKey( int userId){
+        return PREFIX_USER_LIKE +SPLIT+"userlikecount" +SPLIT + userId;
+    }
 }

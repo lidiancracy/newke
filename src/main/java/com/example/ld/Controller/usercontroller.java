@@ -1,18 +1,18 @@
 package com.example.ld.Controller;
 
+import com.example.ld.Util.RedisKeyUtil;
 import com.example.ld.Util.communityutil;
 import com.example.ld.Util.hostholder;
 import com.example.ld.annociation.loginrequired;
 import com.example.ld.entity.User;
+import com.example.ld.mapper.UserMapper;
 import com.example.ld.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -83,4 +83,30 @@ public class usercontroller {
         }
 
     }
+
+    /**
+     * 获取用户简介
+     * /user/profile/userid
+     * @return
+     */
+    @Autowired
+    RedisTemplate redisTemplate;
+    @Autowired
+    UserMapper userMapper;
+    @GetMapping("/profile/{userid}")
+    public String getprofile(@PathVariable int userid,Model model){
+        String userLikeKey = RedisKeyUtil.getUserLikeKey(userid);
+        Object o = redisTemplate.opsForValue().get(userLikeKey);
+        if(o !=null){
+            model.addAttribute("likeCount",(int)o);
+        }
+
+        User user = userMapper.selectById(userid);
+        if(user!=null){
+            model.addAttribute("user",user);
+        }
+
+        return "/site/profile";
+    }
+
 }

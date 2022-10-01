@@ -30,13 +30,14 @@ public class like_serviceimpl {
      * @param entityType
      * @param entityId
      */
-    public void like(Integer id, int entityType, int entityId) {
+    public void like(Integer id, int entityType, int entityId,int fromuserid) {
 
         redisTemplate.execute(new SessionCallback() {  //redis事务系统
             @Override
             public Object execute(RedisOperations operations) throws DataAccessException {
 //                获取key
                 String entityLikeKey = RedisKeyUtil.getEntityLikeKey(entityType, entityId);
+                String userLikeKey = RedisKeyUtil.getUserLikeKey(fromuserid);
                 Boolean member = redisTemplate.opsForSet().isMember(entityLikeKey, id);
 
                 operations.multi();
@@ -44,8 +45,10 @@ public class like_serviceimpl {
                 if (member) {
 //                    如果在，表示已经点过赞了 再点一次取消赞
                     redisTemplate.opsForSet().remove(entityLikeKey, id);
+                    redisTemplate.opsForValue().decrement(userLikeKey);
                 } else {
                     redisTemplate.opsForSet().add(entityLikeKey, id);
+                    redisTemplate.opsForValue().increment(userLikeKey);
                 }
 
                 return operations.exec();
