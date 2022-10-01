@@ -6,3 +6,5 @@
 2022-10-01 18:29:23.171  WARN   [io-8080-exec-10]  com.alibaba.druid.pool.DruidAbstractDataSource     :  discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/community?useUnicode=true&characterEncoding=utf-8, version : 1.2.8, lastPacketReceivedIdleMillis : 115700
 2022-10-01 18:29:23.470  WARN   [nio-8080-exec-7]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [232] milliseconds.
 2022-10-01 18:50:21.693  WARN   [nio-8080-exec-8]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [226] milliseconds.
+2022-10-01 20:40:21.877  WARN   [nio-8080-exec-5]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [230] milliseconds.
+2022-10-01 21:02:56.112  WARN   [nio-8080-exec-7]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [235] milliseconds.

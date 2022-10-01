@@ -134,8 +134,12 @@
 							<div class="mt-4 text-muted font-size-12">
 								发布于 <span th:text="${#dates.format(cvo.comment.createTime,'yyyy-MM-dd HH:mm:ss')}"><b>2019-04-15 15:32:18</b></span>
 								<ul class="d-inline float-right">
-<!--									评论点赞-->
-									<li class="d-inline ml-2"><a href="#" class="text-primary">赞(1)</a></li>
+									<li class="d-inline ml-2">
+										<a href="javascript:;" th:onclick="|like(this,2,${cvo.comment.id})|" class="text-primary">
+											(<i th:text="${cvo.likeCount}">1</i>)
+											<b th:text="${cvo.likeStatus==1?'已赞':'赞'}">赞</b>
+										</a>
+									</li>
 									<li class="d-inline ml-2">|</li>
 <!--									<li class="d-inline ml-2"><a href="#" class="text-primary">回复(<i th:text="${cvo.replyCount}">2</i>)</a></li>-->
 								</ul>

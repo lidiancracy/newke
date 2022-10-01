@@ -12,6 +12,7 @@ import com.example.ld.entity.Page;
 import com.example.ld.entity.User;
 import com.example.ld.mapper.UserMapper;
 import com.example.ld.service.CommentService;
+import com.example.ld.service.impl.like_serviceimpl;
 import com.example.ld.service.postservice;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -78,6 +79,9 @@ public class DiscussPostController implements ActivateState {
     RedisTemplate redisTemplate;
     @Autowired
     hostholder hostholder;
+    @Autowired
+    like_serviceimpl like_serviceimpl;
+
     @GetMapping("/postdetail/{postid}")
     public String postdetail(@PathVariable String postid, Model model, Page page) {
 //        根据帖子id查出帖子所有信息 上半部
@@ -127,6 +131,13 @@ public class DiscussPostController implements ActivateState {
                     cvo.put("user", user);
                 }
                 cvo.put("comment", comment);
+//                like
+                long entityLikeCount = like_serviceimpl.findEntityLikeCount(2, comment.getId());
+                cvo.put("likeCount",entityLikeCount);
+                if(hostholder.getUser()!=null){
+                    int entityLikeStatus = like_serviceimpl.findEntityLikeStatus(hostholder.getUser().getId(), 2, comment.getId());
+                    cvo.put("likeStatus",entityLikeStatus);
+                }
                 comments.add(cvo);
             }
         }

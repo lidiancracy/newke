@@ -40,6 +40,10 @@ public class likeController implements ActivateState {
 //        只有点击赞或者取消赞才回到这个controller方法中来
 //        我们规定redis存储结构 like:entityType:entityId  然后里面是一个
         User user = hostholder.getUser();
+        /**
+         * 第一个是动作
+         * 其他两个都是查看redis
+         */
         // 点赞动作
 //        谁在点赞 点赞帖子还是评论 帖子或者评论id是多少 userid应该是存在reids里面用来统计 key是 type+entityid
         like_serviceimpl.like(user.getId(), entityType, entityId);
