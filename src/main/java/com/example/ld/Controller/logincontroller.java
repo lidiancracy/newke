@@ -1,12 +1,15 @@
 package com.example.ld.Controller;
 
 import com.example.ld.Util.ActivateState;
+import com.example.ld.Util.RedisKeyUtil;
+import com.example.ld.Util.communityutil;
 import com.example.ld.entity.User;
 import com.example.ld.service.UserService;
 import com.google.code.kaptcha.Producer;
-import lombok.extern.log4j.Log4j;
+import com.qiniu.storage.ApiUploadV1PutChunk;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -15,11 +18,14 @@ import org.springframework.web.bind.annotation.*;
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.net.http.HttpRequest;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @ClassName logincontroller
@@ -64,6 +70,7 @@ public class logincontroller implements ActivateState {
 
     /**
      * 邮箱激活
+     *
      * @param model
      * @param id
      * @param code
@@ -86,22 +93,36 @@ public class logincontroller implements ActivateState {
     }
 
 
-
     /**
      * 获得生成的随机验证码
      *
      * @param response
      * @param httpSession
      */
+    @Autowired
+    RedisTemplate redisTemplate;
+
     @GetMapping("/kaptcha")
-    public void getKapatchaImage(HttpServletResponse response, HttpSession httpSession) {
+    public void getKapatchaImage(HttpServletResponse response) {
         //生成验证码
         String text = producer.createText();
         BufferedImage image = producer.createImage(text);
 
         //验证码字符串写入到session中.服务器将依托cookie 【key,value】value中存放的是当前生成的sessionid.
         //以后浏览器访问浏览器时，将会携带该cookie信息，使得多个浏览器请求中携带重要的信息【基于HTTP请求是无状态的，将验证字符串存入到session中，保存到服务中】
-        httpSession.setAttribute("kapatchaStr", text);
+        /**
+         * httpSession.setAttribute("kapatchaStr", text);
+         * 我们重构代码,不用session存验证码 用redis存
+         * 思路如下
+         * 我们存redis value是text 我们需要随机生成一个uuid 作为key
+         * 而这个key 我们放入cookie中 可以设定个失效age
+         */
+        String generateuuid = communityutil.generateuuid();
+        Cookie yzm = new Cookie("yzm", generateuuid);
+        yzm.setMaxAge(60);
+        response.addCookie(yzm);
+        String kapChaKey = RedisKeyUtil.getKapChaKey(generateuuid);
+        redisTemplate.opsForValue().set(kapChaKey, text, 60, TimeUnit.SECONDS);
 
         //图片响应给response
         //响应格式为.png的图片
@@ -125,28 +146,28 @@ public class logincontroller implements ActivateState {
      * model 用于传数据给前端页面
      */
     @PostMapping("/login")
-    public String checklogin(String username,String password,String checkcode,boolean remenber,
-            HttpSession session,HttpServletResponse response,Model model
-    ){
-        String text = session.getAttribute("kapatchaStr").toString();
-        log.info(text);
-        if(!text.equalsIgnoreCase(checkcode)|| !StringUtils.hasText(text)||!StringUtils.hasText(checkcode)){
+    public String checklogin(String username, String password, String checkcode, boolean remenber,
+                             HttpServletResponse response, Model model,@CookieValue("yzm") String yzm) {
+        String kapChaKey = RedisKeyUtil.getKapChaKey(yzm);
+        String text = (String) redisTemplate.opsForValue().get(kapChaKey);
+
+        if (!text.equalsIgnoreCase(checkcode) || !StringUtils.hasText(text) || !StringUtils.hasText(checkcode)) {
 //            如果验证码输入不正确,返回login页面
-            model.addAttribute("codeMsg","验证码有误");
+            model.addAttribute("codeMsg", "验证码有误");
             return "/site/login";
         }
-        int exptime=remenber==true?remenber_exptime:default_exptime;
+        int exptime = remenber == true ? remenber_exptime : default_exptime;
         Map<String, Object> map = userService.login(username, password, exptime);
-        if(map.containsKey("ticket")){
+        if (map.containsKey("ticket")) {
 //            如果包含ticket说明验证成功,返回主页
             Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
             cookie.setMaxAge(exptime);
             response.addCookie(cookie);
             return "redirect:index";
-        }else {
+        } else {
 //            账号密码验证失败,需要将结果返回login页面
-            model.addAttribute("usernameMsg",map.get("usernameMsg"));
-            model.addAttribute("passwordMsg",map.get("passwordMsg"));
+            model.addAttribute("usernameMsg", map.get("usernameMsg"));
+            model.addAttribute("passwordMsg", map.get("passwordMsg"));
             return "/site/login";
         }
 
@@ -158,7 +179,7 @@ public class logincontroller implements ActivateState {
      * 如果浏览器某个cookie值，我们可以直接用注解获取
      */
     @GetMapping("/logout")
-    public String logout(@CookieValue("ticket") String ticket){
+    public String logout(@CookieValue("ticket") String ticket) {
         userService.logout(ticket);
         return "redirect:/login";
     }

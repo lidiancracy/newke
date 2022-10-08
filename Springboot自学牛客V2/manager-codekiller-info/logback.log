@@ -393,3 +393,81 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2022-10-08 18:08:16.122  INFO   [nio-8080-exec-3]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 0 ms
 2022-10-08 18:11:45.211  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
 2022-10-08 18:11:45.214  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-08 18:11:51.958  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 24920 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-08 18:11:51.963  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-08 18:11:52.684  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-08 18:11:52.686  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-08 18:11:52.714  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-10-08 18:11:53.391  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-08 18:11:53.393  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-08 18:11:53.393  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-08 18:11:53.393  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-08 18:11:53.396  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-08 18:11:53.406  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-08 18:11:53.407  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-08 18:11:53.407  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-08 18:11:53.485  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-08 18:11:53.485  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1470 ms
+2022-10-08 18:11:53.614  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-08 18:11:53.699  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-08 18:11:54.343  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-08 18:11:54.671  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-08 18:11:54.696  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-08 18:11:54.707  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 3.317 seconds (JVM running for 4.967)
+2022-10-08 18:11:57.122  INFO   [nio-8080-exec-1]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-08 18:11:57.122  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-10-08 18:11:57.124  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 1 ms
+2022-10-08 20:32:52.719  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-08 20:32:52.721  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-08 20:32:56.092  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 25688 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-08 20:32:56.096  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-08 20:32:56.918  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-08 20:32:56.921  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-08 20:32:56.953  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2022-10-08 20:32:57.661  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-08 20:32:57.663  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-08 20:32:57.663  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-08 20:32:57.663  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-08 20:32:57.666  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-08 20:32:57.676  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-08 20:32:57.677  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-08 20:32:57.677  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-08 20:32:57.755  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-08 20:32:57.756  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1603 ms
+2022-10-08 20:32:57.883  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-08 20:32:57.972  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-08 20:32:58.628  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-08 20:32:58.967  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-08 20:32:58.992  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-08 20:32:59.003  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 3.544 seconds (JVM running for 5.316)
+2022-10-08 20:33:08.082  INFO   [nio-8080-exec-1]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-08 20:33:08.083  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-10-08 20:33:08.084  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 1 ms
+2022-10-08 20:46:13.914  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-08 20:46:13.922  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-08 20:46:17.694  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 1172 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-08 20:46:17.698  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-08 20:46:18.508  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-08 20:46:18.511  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-08 20:46:18.546  INFO   [main           ]  o.s.d.r.config.RepositoryConfigurationDelegate     :  Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2022-10-08 20:46:19.247  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-08 20:46:19.249  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-08 20:46:19.249  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-08 20:46:19.249  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-08 20:46:19.252  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-08 20:46:19.262  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-08 20:46:19.263  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-08 20:46:19.263  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-08 20:46:19.346  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-08 20:46:19.346  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1596 ms
+2022-10-08 20:46:19.518  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-08 20:46:19.625  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-08 20:46:20.304  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-08 20:46:20.646  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-08 20:46:20.671  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-08 20:46:20.682  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 3.509 seconds (JVM running for 5.397)
+2022-10-08 20:46:45.804  INFO   [nio-8080-exec-3]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-08 20:46:45.805  INFO   [nio-8080-exec-3]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-10-08 20:46:45.806  INFO   [nio-8080-exec-3]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 1 ms
+2022-10-08 20:49:25.876  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-08 20:49:25.879  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
