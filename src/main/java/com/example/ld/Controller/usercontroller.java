@@ -7,6 +7,7 @@ import com.example.ld.annociation.loginrequired;
 import com.example.ld.entity.User;
 import com.example.ld.mapper.UserMapper;
 import com.example.ld.service.UserService;
+import com.example.ld.service.followService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -93,6 +94,8 @@ public class usercontroller {
     RedisTemplate redisTemplate;
     @Autowired
     UserMapper userMapper;
+    @Autowired
+    followService followserv;
     @GetMapping("/profile/{userid}")
     public String getprofile(@PathVariable int userid,Model model){
         String userLikeKey = RedisKeyUtil.getUserLikeKey(userid);
@@ -105,7 +108,17 @@ public class usercontroller {
         if(user!=null){
             model.addAttribute("user",user);
         }
+        User user1 = hostholder.getUser();
+        if(user1!=null){
+            Integer loginid = user1.getId();
+            boolean followornot= followserv.followornot(userid,3,loginid);
+            model.addAttribute("hasFollowed",followornot);
+        }
 
+        long fllowcount= followserv.followcount(userid,3);
+        long fans= followserv.fans(userid,3);
+        model.addAttribute("followeeCount",fllowcount); //关注了多少人
+        model.addAttribute("followerCount",fans);  //粉丝多少
         return "/site/profile";
     }
 
