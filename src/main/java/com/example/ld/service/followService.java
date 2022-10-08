@@ -1,5 +1,9 @@
 package com.example.ld.service;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * @ClassName followService
  * @Description TODO
@@ -19,4 +23,9 @@ public interface followService {
     long followcount(int userid, int i);
 
     long fans(int userid, int i);
+
+
+    List<HashMap<String, Object>> findall(int userid, int offset, int limit);
+
+    List<HashMap<String, Object>> findallfans(int userid, int offset, int limit);
 }

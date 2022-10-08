@@ -1,7 +1,8 @@
 package com.example.ld.service.impl;
 
 import com.example.ld.Util.RedisKeyUtil;
-import com.example.ld.Util.communityutil;
+import com.example.ld.entity.User;
+import com.example.ld.mapper.UserMapper;
 import com.example.ld.service.followService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
@@ -9,6 +10,8 @@ import org.springframework.data.redis.core.RedisOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.SessionCallback;
 import org.springframework.stereotype.Service;
+
+import java.util.*;
 
 /**
  * @ClassName followServiceimpl
@@ -107,5 +110,62 @@ public class followServiceimpl implements followService {
     public long fans(int userid, int i) {
         String getfollowee = RedisKeyUtil.getfollowee(i,userid);
         return redisTemplate.opsForZSet().zCard(getfollowee);
+    }
+
+    /**
+     * 查出所有的关注数
+     * @param userid
+     * @param offset
+     * @param limit
+     * @return
+     */
+    @Autowired
+    UserMapper userMapper;
+
+    @Override
+    public List<HashMap<String, Object>> findall(int userid, int offset, int limit) {
+        String key = RedisKeyUtil.getfollow(3, userid);
+        Set<Integer> targetIds = redisTemplate.opsForZSet().reverseRange(key, offset, offset + limit - 1);
+        List<HashMap<String, Object>> users=new ArrayList<HashMap<String, Object>>();
+        for (Integer targetId : targetIds) {
+            User user = userMapper.selectById(targetId);
+            if(user==null){
+                continue;
+            }
+            HashMap<String, Object> map = new HashMap<>();
+            Double score = redisTemplate.opsForZSet().score(key, targetId);
+            map.put("user",user);
+            map.put("hasFollowed",followornot(targetId,3,userid));
+            map.put("followTime",new Date(score.longValue()));
+            users.add(map);
+        }
+        return users;
+    }
+
+    /**
+     * 查询所有fans 并封装
+     * @param userid
+     * @param offset
+     * @param limit
+     * @return
+     */
+    @Override
+    public List<HashMap<String, Object>> findallfans(int userid, int offset, int limit) {
+        String key = RedisKeyUtil.getfollowee(3, userid);
+        Set<Integer> targetIds = redisTemplate.opsForZSet().reverseRange(key, offset, offset + limit - 1);
+        List<HashMap<String, Object>> users=new ArrayList<HashMap<String, Object>>();
+        for (Integer targetId : targetIds) {
+            User user = userMapper.selectById(targetId);
+            if(user==null){
+                continue;
+            }
+            HashMap<String, Object> map = new HashMap<>();
+            Double score = redisTemplate.opsForZSet().score(key, targetId);
+            map.put("user",user);
+            map.put("hasFollowed",followornot(targetId,3,userid));
+            map.put("followTime",new Date(score.longValue()));
+            users.add(map);
+        }
+        return users;
     }
 }
