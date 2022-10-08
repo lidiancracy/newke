@@ -7,6 +7,7 @@ package com.example.ld.interceptor;
  */
 
 import com.example.ld.Util.Cookieutils;
+import com.example.ld.Util.RedisKeyUtil;
 import com.example.ld.Util.hostholder;
 import com.example.ld.entity.LoginTicket;
 import com.example.ld.entity.User;
@@ -14,6 +15,7 @@ import com.example.ld.mapper.LoginTicketMapper;
 import com.example.ld.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -30,8 +32,8 @@ import java.util.Date;
 @Component
 @Slf4j
 public class interceptordeal implements HandlerInterceptor {
-    @Autowired
-    LoginTicketMapper loginTicketMapper;
+//    @Autowired
+//    LoginTicketMapper loginTicketMapper;
     @Autowired
     UserMapper userMapper;
     @Autowired
@@ -46,12 +48,16 @@ public class interceptordeal implements HandlerInterceptor {
      * @return
      * @throws Exception
      */
+    @Autowired
+    RedisTemplate redisTemplate;
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String ticket = Cookieutils.getticket(request, "ticket");
         if(ticket!=null ){
 //            凭证存在,还要验证状态码以及是否超时
-            LoginTicket selectbyticket = loginTicketMapper.selectbyticket(ticket);
+            String redisKey = RedisKeyUtil.getTicketKey(ticket);
+            LoginTicket selectbyticket = (LoginTicket) redisTemplate.opsForValue().get(redisKey);
+
             if(selectbyticket!=null && selectbyticket.getStatus()==0&& selectbyticket.getExpired().after(new Date())){
                 User user = userMapper.selectById(selectbyticket.getUserId());
 //                用 hostholder 将用户存下来

@@ -2,6 +2,7 @@ package com.example.ld.service.impl;
 
 
 import com.example.ld.Util.ActivateState;
+import com.example.ld.Util.RedisKeyUtil;
 import com.example.ld.Util.communityutil;
 import com.example.ld.Util.hostholder;
 import com.example.ld.entity.LoginTicket;
@@ -18,6 +19,7 @@ import com.qiniu.util.Auth;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -29,6 +31,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * (User)表服务实现类
@@ -49,8 +52,8 @@ public class UserServiceImpl implements UserService, ActivateState {
     private String myemail;
     @Autowired
     private JavaMailSender javaMailSender;
-    @Autowired
-    private LoginTicketMapper loginTicketMapper;
+//    @Autowired
+//    private LoginTicketMapper loginTicketMapper;
 
 
     /**
@@ -116,7 +119,14 @@ public class UserServiceImpl implements UserService, ActivateState {
      */
     @Override
     public int activateemail(int id, String code) {
-        User user = userMapper.selectById(id);
+
+        User cache = getCache(id);
+        User user=null;
+        if(cache==null){
+            user = initCache(id);
+        }else {
+            user=cache;
+        }
         if (user.getStatus() == 1) {
 //
             return ActivateState.REPEATACTIVATE;
@@ -124,6 +134,7 @@ public class UserServiceImpl implements UserService, ActivateState {
 //            还未激活
             if (user.getActivationCode().equals(code)) {
                 userMapper.updateStatus(id, 1);
+                clearCache(id);
                 return ActivateState.ACTIVATED;
             } else {
                 return ActivateState.UNACTIVATED;
@@ -141,6 +152,8 @@ public class UserServiceImpl implements UserService, ActivateState {
      * @param expiretime
      * @return
      */
+    @Autowired
+    RedisTemplate redisTemplate;
     @Override
     public Map<String, Object> login(String username, String password, int expiretime) {
         Map<String, Object> map = new HashMap<>();
@@ -171,7 +184,10 @@ public class UserServiceImpl implements UserService, ActivateState {
         loginTicket.setTicket(communityutil.generateuuid());
         loginTicket.setStatus(0);
         loginTicket.setExpired(new Date(System.currentTimeMillis() + expiretime * 1000));
-        loginTicketMapper.insertticket(loginTicket);
+
+        String redisKey = RedisKeyUtil.getTicketKey(loginTicket.getTicket());
+        redisTemplate.opsForValue().set(redisKey, loginTicket);
+
         map.put("ticket",loginTicket.getTicket());
         return  map;
     }
@@ -182,8 +198,10 @@ public class UserServiceImpl implements UserService, ActivateState {
      */
     @Override
     public void logout(String ticket) {
-        LoginTicket selectbyticket = loginTicketMapper.selectbyticket(ticket);
-        loginTicketMapper.updateticket(selectbyticket,1);
+        String redisKey = RedisKeyUtil.getTicketKey(ticket);
+        LoginTicket loginTicket = (LoginTicket) redisTemplate.opsForValue().get(redisKey);
+        loginTicket.setStatus(1);
+        redisTemplate.opsForValue().set(redisKey, loginTicket);
     }
 
     /**
@@ -273,6 +291,7 @@ public class UserServiceImpl implements UserService, ActivateState {
     @Override
     public int changepic(Integer id, String url) {
         int i = userMapper.updateHeader(id, url);
+        clearCache(id);
         return i;
     }
 
@@ -294,5 +313,24 @@ public class UserServiceImpl implements UserService, ActivateState {
         }
     }
 
+    // 1.优先从缓存中取值
+    private User getCache(int userId) {
+        String redisKey = RedisKeyUtil.getUserKey(userId);
+        return (User) redisTemplate.opsForValue().get(redisKey);
+    }
+
+    // 2。取不到时就初始化缓存数据
+    private User initCache(int userId) {
+        User user = userMapper.selectById(userId);
+        String redisKey = RedisKeyUtil.getUserKey(userId);
+        redisTemplate.opsForValue().set(redisKey, user, 3600, TimeUnit.SECONDS);
+        return user;
+    }
+
+    // 3.当数据变更时清除缓存数据
+    private void clearCache(int userId) {
+        String redisKey = RedisKeyUtil.getUserKey(userId);
+        redisTemplate.delete(redisKey);
+    }
 
 }

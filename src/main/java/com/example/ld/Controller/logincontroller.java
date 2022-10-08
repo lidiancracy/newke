@@ -180,8 +180,13 @@ public class logincontroller implements ActivateState {
      */
     @GetMapping("/logout")
     public String logout(@CookieValue("ticket") String ticket) {
-        userService.logout(ticket);
-        return "redirect:/login";
+        if(StringUtils.hasText(ticket)){
+            userService.logout(ticket);
+            return "redirect:/login";
+        }else {
+            return  null;
+        }
+
     }
 
 
