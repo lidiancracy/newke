@@ -62,7 +62,7 @@ public class likeController implements ActivateState {
             Event event = new Event()
                     .setTopic(TOPIC_LIKE)
                     .setUserId(user.getId())
-                    .setEntityType(entityType)
+                    .setEntityType(ENTITY_TYPE_POST)
                     .setEntityId(entityId)
                     .setEntityUserId(fromuserid)
                     ;

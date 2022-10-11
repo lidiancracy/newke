@@ -4,6 +4,7 @@ import com.example.ld.Event.producer;
 import com.example.ld.Util.ActivateState;
 import com.example.ld.Util.communityutil;
 import com.example.ld.Util.hostholder;
+import com.example.ld.entity.Event;
 import com.example.ld.entity.Page;
 import com.example.ld.entity.User;
 import com.example.ld.mapper.UserMapper;
@@ -42,6 +43,8 @@ public class followcontroller implements ActivateState {
      * 我们需要添加这个人的id到
      * @return
      */
+    @Autowired
+    producer producer;
     @PostMapping("/follow")
     @ResponseBody
     public String followpeople(int entityType,int entityId){
@@ -50,6 +53,18 @@ public class followcontroller implements ActivateState {
             Integer userid = user.getId();
             followservice.followsomeone(userid,entityType,entityId);
         }
+
+
+
+        Event event = new Event()
+                .setTopic(TOPIC_FOLLOW)
+                .setUserId(user.getId())
+                .setEntityType(ENTITY_TYPE_USER)
+                .setEntityId(entityId)
+                .setEntityUserId(entityId)
+                ;
+        producer.senmsg(event);
+
         return communityutil.getJSONString(0, "已关注！");
     }
 

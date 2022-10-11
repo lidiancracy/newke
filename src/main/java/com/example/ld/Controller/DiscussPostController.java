@@ -1,15 +1,13 @@
 package com.example.ld.Controller;
 
 
+import com.example.ld.Event.producer;
 import com.example.ld.Util.ActivateState;
 import com.example.ld.Util.RedisKeyUtil;
 import com.example.ld.Util.communityutil;
 import com.example.ld.Util.hostholder;
 import com.example.ld.annociation.loginrequired;
-import com.example.ld.entity.Comment;
-import com.example.ld.entity.DiscussPost;
-import com.example.ld.entity.Page;
-import com.example.ld.entity.User;
+import com.example.ld.entity.*;
 import com.example.ld.mapper.UserMapper;
 import com.example.ld.service.CommentService;
 import com.example.ld.service.impl.like_serviceimpl;
@@ -95,17 +93,17 @@ public class DiscussPostController implements ActivateState {
         model.addAttribute("post", discussPost);
 
 //        likeStatus likeCount 传一下 ，每次刷新页面显示
-        String entityLikeKey = RedisKeyUtil.getEntityLikeKey(1,Integer.parseInt(postid) );
+        String entityLikeKey = RedisKeyUtil.getEntityLikeKey(1, Integer.parseInt(postid));
         Long size = redisTemplate.opsForSet().size(entityLikeKey);
-        int likestate=0;
-        if(hostholder.getUser()!=null){
-            if(redisTemplate.opsForSet().isMember(entityLikeKey,hostholder.getUser().getId())){
-                likestate=1;
+        int likestate = 0;
+        if (hostholder.getUser() != null) {
+            if (redisTemplate.opsForSet().isMember(entityLikeKey, hostholder.getUser().getId())) {
+                likestate = 1;
             }
         }
 
-        model.addAttribute("likeStatus",likestate);
-        model.addAttribute("likeCount",size);
+        model.addAttribute("likeStatus", likestate);
+        model.addAttribute("likeCount", size);
         /**
          * 评论分页设置
          * seltlimit 是设置每页几个
@@ -133,10 +131,10 @@ public class DiscussPostController implements ActivateState {
                 cvo.put("comment", comment);
 //                like
                 long entityLikeCount = like_serviceimpl.findEntityLikeCount(2, comment.getId());
-                cvo.put("likeCount",entityLikeCount);
-                if(hostholder.getUser()!=null){
+                cvo.put("likeCount", entityLikeCount);
+                if (hostholder.getUser() != null) {
                     int entityLikeStatus = like_serviceimpl.findEntityLikeStatus(hostholder.getUser().getId(), 2, comment.getId());
-                    cvo.put("likeStatus",entityLikeStatus);
+                    cvo.put("likeStatus", entityLikeStatus);
                 }
                 comments.add(cvo);
             }
@@ -151,12 +149,29 @@ public class DiscussPostController implements ActivateState {
      * 重定向 渲染
      */
 
+    @Autowired
+    producer producer;
 
     @loginrequired
     @PostMapping("/addacomment")
     public String addcomment(String postid, String content) {
         Integer id = hostholder.getUser().getId();
+        DiscussPost getpostbyid = postservice.getpostbyid(postid);
+        Integer userid = null;
+        if (getpostbyid != null) {
+            userid = Integer.valueOf(getpostbyid.getUserId());
+        }
         postservice.addcomment(id, postid, content);
+//        添加评论 触发消息
+
+        Event event = new Event()
+                .setTopic(TOPIC_COMMENT)
+                .setUserId(id)
+                .setEntityType(ENTITY_TYPE_COMMENT)
+                .setEntityId(Integer.parseInt(postid))
+                .setEntityUserId(userid);
+        producer.senmsg(event);
+
         return "redirect:/postdetail/" + postid;
     }
 }
