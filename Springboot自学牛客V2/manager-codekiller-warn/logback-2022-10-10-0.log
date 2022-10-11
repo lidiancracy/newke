@@ -1,0 +1,1 @@
+2022-10-10 21:23:46.251  WARN   [detector-thread]  org.mybatis.spring.mapper.ClassPathMapperScanner   :  No MyBatis mapper was found in '[com.example.ld]' package. Please check your configuration.

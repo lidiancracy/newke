@@ -29,4 +29,6 @@ public interface MessageMapper  {
 
 
     List<Message> getallbyconvid_fenye(String conversationId, int limit, int offset);
+
+    void savemsg(Message message);
 }

@@ -18,8 +18,8 @@ public interface ActivateState {
      * 记住我 状态下的凭证存储时间
      * 默认凭证存储时间
      */
-    public static final int default_exptime = 3600*24;
-    public static final int remenber_exptime = 3600*24*100;
+    public static final int default_exptime = 3600 * 24;
+    public static final int remenber_exptime = 3600 * 24 * 100;
     /**
      * entity_type为0 表示在帖子下面回复
      * entity_type为1 表示在帖子下面的用户回复下回复
@@ -45,4 +45,24 @@ public interface ActivateState {
     public static final int ENTITY_TYPE_POST = 1;
     public static final int ENTITY_TYPE_COMMENT = 2;
     public static final int ENTITY_TYPE_USER = 3;
+
+    /**
+     * 主题：评论
+     */
+    String TOPIC_COMMENT = "comment";
+
+    /**
+     * 主题：点赞
+     */
+    String TOPIC_LIKE = "like";
+
+    /**
+     * 主题：关注
+     */
+    String TOPIC_FOLLOW = "follow";
+    /**
+     * 系统消息的发送者我们规定id为1
+     */
+    int SYSTEM_ID=1;
+
 }

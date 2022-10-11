@@ -1,9 +1,11 @@
 package com.example.ld.Controller;
 
+import com.example.ld.Event.producer;
 import com.example.ld.Util.ActivateState;
 import com.example.ld.Util.communityutil;
 import com.example.ld.Util.hostholder;
 import com.example.ld.annociation.loginrequired;
+import com.example.ld.entity.Event;
 import com.example.ld.entity.User;
 import com.example.ld.service.impl.like_serviceimpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,6 +35,8 @@ public class likeController implements ActivateState {
     @Autowired
     like_serviceimpl like_serviceimpl;
     @Autowired
+    producer producer;
+    @Autowired
     hostholder hostholder;
     @PostMapping("/like")
     @ResponseBody
@@ -51,6 +56,18 @@ public class likeController implements ActivateState {
         long likeCount = like_serviceimpl.findEntityLikeCount(entityType, entityId);
         // 状态
         int likeStatus = like_serviceimpl.findEntityLikeStatus(user.getId(), entityType, entityId);
+//        如果状态是点赞状态就需要发送信息
+        // 触发点赞事件
+        if (likeStatus == 1) {
+            Event event = new Event()
+                    .setTopic(TOPIC_LIKE)
+                    .setUserId(user.getId())
+                    .setEntityType(entityType)
+                    .setEntityId(entityId)
+                    .setEntityUserId(fromuserid)
+                    ;
+            producer.senmsg(event);
+        }
         // 返回结果
         Map<String, Object> map = new HashMap<>();
         map.put("likeCount", likeCount);
