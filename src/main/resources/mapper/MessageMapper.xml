@@ -28,7 +28,7 @@
         from message
         WHERE id in (select max(id)
                      from message
-                     where (from_id = #{id} or to_id = #{id})
+                     where (from_id = #{id} or to_id = #{id}) and (from_id!=1)
                      group by conversation_id)
         limit #{offset}, #{limit}
     </select>
