@@ -3,6 +3,7 @@ package com.example.ld.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.ld.Util.ActivateState;
+import com.example.ld.entity.Comment;
 import com.example.ld.entity.Message;
 import com.example.ld.entity.User;
 import com.example.ld.mapper.MessageMapper;
@@ -215,6 +216,33 @@ public class Msgservimpl extends ServiceImpl<MessageMapper, Message> implements 
                 .eq(Message::getToId,id);
         long count = count(messageLambdaQueryWrapper);
         return Integer.parseInt(String.valueOf(count));
+    }
+
+    @Override
+    public List<Message> find_all_commentnotice(Integer id, int offset, int limit) {
+        List<Message> comment = messageMapper.commentnoticeall(id, "comment", offset, limit);
+        for (Message message : comment) {
+            messageMapper.status1(message.getId());
+        }
+        return comment;
+    }
+
+    @Override
+    public List<Message> find_all_likenotice(Integer id, int offset, int limit) {
+        List<Message> comment = messageMapper.likenoticeall(id, "like", offset, limit);
+        for (Message message : comment) {
+            messageMapper.status1(message.getId());
+        }
+        return comment;
+    }
+
+    @Override
+    public List<Message> find_all_flnotice(Integer id, int offset, int limit) {
+        List<Message> comment = messageMapper.flnoticeall(id, "follow", offset, limit);
+        for (Message message : comment) {
+            messageMapper.status1(message.getId());
+        }
+        return comment;
     }
 
 

@@ -3,17 +3,20 @@ package com.example.ld.Controller;
 import com.alibaba.fastjson.JSONObject;
 import com.example.ld.Util.ActivateState;
 import com.example.ld.Util.hostholder;
-import com.example.ld.entity.Event;
-import com.example.ld.entity.Message;
-import com.example.ld.entity.User;
+import com.example.ld.entity.*;
 import com.example.ld.mapper.UserMapper;
 import com.example.ld.service.MSGService;
+import com.example.ld.service.followService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * @ClassName noticeController
@@ -21,6 +24,7 @@ import java.util.HashMap;
  * @Date 2022/10/12 12:57
  */
 @Controller
+@Slf4j
 public class noticeController implements ActivateState {
     @Autowired
     MSGService msgService;
@@ -124,5 +128,145 @@ public class noticeController implements ActivateState {
         followNotice.put("entityType",event_fl.getEntityType());
         model.addAttribute("followNotice",followNotice);
         return "/site/notice";
+    }
+
+    /**
+     * comment notice 详情页面
+     * map需要封装
+     * - fromuser对象
+     * - notice 对象
+     * - topic变量
+     * - user trigger对象
+     * - entityType 类型
+     * - postId 帖子id
+     *
+     */
+    @GetMapping("/notice/detail/comment")
+    public String getcommetdetail(Model model, Page page){
+        User user = hostholder.getUser();
+        if(user==null){
+            return  null;
+        }
+        Integer id = user.getId();
+        page.setLimit(2);  // 每页大小
+        page.setPath("/notice/detail/comment");  // 上一页下一个跳转，一般我们上下页的请求path是不带页数的
+        page.setRows(msgService.count_commentall(id)); // 总数
+// 这种自定义不好的一点是每次都需要自己输入总数，虽然redis总数好求
+        List<Message> commentList = msgService.find_all_commentnotice(
+                id, page.getOffset(), page.getLimit());
+        ArrayList<HashMap<String, Object>> notices = new ArrayList<>();
+
+        for (Message comment : commentList) {
+            HashMap<String, Object> map = new HashMap<>();
+            String content = comment.getContent();
+            Event message=null;
+            if(StringUtils.hasText(content)){
+                 message = JSONObject.parseObject(content, Event.class);
+            }
+            if(message==null){
+                return null;
+            }
+            int userId = message.getUserId();
+            User user1 = userMapper.selectById(userId);
+            if(user1!=null){
+                map.put("user",user1);
+            }
+
+
+            map.put("fromUser",user);
+            map.put("entityType",message.getEntityType());
+            map.put("notice",comment);
+            map.put("postId",message.getEntityId());
+            map.put("topic",TOPIC_COMMENT.equals(comment.getConversationId()));
+
+            notices.add(map);
+        }
+        model.addAttribute("notices",notices);
+        return "/site/notice-detail";
+    }
+
+    @GetMapping("/notice/detail/like")
+    public String getclikedetail(Model model, Page page){
+        User user = hostholder.getUser();
+        if(user==null){
+            return  null;
+        }
+        Integer id = user.getId();
+        page.setLimit(2);  // 每页大小
+        page.setPath("/notice/detail/like");  // 上一页下一个跳转，一般我们上下页的请求path是不带页数的
+        page.setRows(msgService.count_likeall(id)); // 总数
+// 这种自定义不好的一点是每次都需要自己输入总数，虽然redis总数好求
+        List<Message> commentList = msgService.find_all_likenotice(
+                id, page.getOffset(), page.getLimit());
+        ArrayList<HashMap<String, Object>> notices = new ArrayList<>();
+
+        for (Message comment : commentList) {
+            HashMap<String, Object> map = new HashMap<>();
+            String content = comment.getContent();
+            Event message=null;
+            if(StringUtils.hasText(content)){
+                message = JSONObject.parseObject(content, Event.class);
+            }
+            if(message==null){
+                return null;
+            }
+            int userId = message.getUserId();
+            User user1 = userMapper.selectById(userId);
+            if(user1!=null){
+                map.put("user",user1);
+            }
+
+
+            map.put("fromUser",user);
+            map.put("entityType",message.getEntityType());
+            map.put("notice",comment);
+            map.put("postId",message.getEntityId());
+            map.put("topic",TOPIC_LIKE.equals(comment.getConversationId()));
+
+            notices.add(map);
+        }
+        model.addAttribute("notices",notices);
+        return "/site/notice-detail";
+    }
+
+    @GetMapping("/notice/detail/follow")
+    public String getfollowdetail(Model model, Page page){
+        User user = hostholder.getUser();
+        if(user==null){
+            return  null;
+        }
+        Integer id = user.getId();
+        page.setLimit(2);  // 每页大小
+        page.setPath("/notice/detail/follow");  // 上一页下一个跳转，一般我们上下页的请求path是不带页数的
+        page.setRows(msgService.count_fl_all(id)); // 总数
+// 这种自定义不好的一点是每次都需要自己输入总数，虽然redis总数好求
+        List<Message> commentList = msgService.find_all_flnotice(
+                id, page.getOffset(), page.getLimit());
+        ArrayList<HashMap<String, Object>> notices = new ArrayList<>();
+
+        for (Message comment : commentList) {
+            HashMap<String, Object> map = new HashMap<>();
+            String content = comment.getContent();
+            Event message=null;
+            if(StringUtils.hasText(content)){
+                message = JSONObject.parseObject(content, Event.class);
+            }
+            if(message==null){
+                return null;
+            }
+            int userId = message.getUserId();
+            User user1 = userMapper.selectById(userId);
+            if(user1!=null){
+                map.put("user",user1);
+            }
+            map.put("fromUser",user);
+            map.put("entityType",message.getEntityType());
+            map.put("notice",comment);
+            map.put("postId",message.getEntityId());
+            map.put("topic",TOPIC_FOLLOW.equals(comment.getConversationId()));
+            notices.add(map);
+        }
+        model.addAttribute("notices",notices);
+        return "/site/notice-detail";
     }
 }

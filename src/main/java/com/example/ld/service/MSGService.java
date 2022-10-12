@@ -2,6 +2,7 @@ package com.example.ld.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.example.ld.entity.Comment;
 import com.example.ld.entity.Message;
 
 import java.util.List;
@@ -46,4 +47,11 @@ public interface MSGService  extends IService<Message> {
     Integer count_fl_unread(Integer id);
 
     Integer count_fl_all(Integer id);
+
+    List<Message> find_all_commentnotice(Integer id, int offset, int limit);
+
+    List<Message> find_all_likenotice(Integer id, int offset, int limit);
+
+    List<Message> find_all_flnotice(Integer id, int offset, int limit);
+
 }
