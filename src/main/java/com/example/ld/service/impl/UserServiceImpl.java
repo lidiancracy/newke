@@ -1,6 +1,7 @@
 package com.example.ld.service.impl;
 
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.ld.Util.ActivateState;
 import com.example.ld.Util.RedisKeyUtil;
 import com.example.ld.Util.communityutil;
@@ -41,7 +42,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Slf4j
 @Service
-public class UserServiceImpl implements UserService, ActivateState {
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService, ActivateState {
 
     @Autowired
     private UserMapper userMapper;

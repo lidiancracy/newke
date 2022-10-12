@@ -55,4 +55,5 @@
         where conversation_id = #{conversationId}
         order by message.create_time desc limit #{offset} , #{limit}
     </select>
+
 </mapper>

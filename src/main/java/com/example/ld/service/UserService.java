@@ -1,6 +1,7 @@
 package com.example.ld.service;
 
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.ld.entity.User;
 
 
@@ -14,7 +15,7 @@ import java.util.Map;
  * @author makejava
  * @since 2022-09-17 19:57:22
  */
-public interface UserService {
+public interface UserService  extends IService<User> {
     public Map<String,Object> register(User user);
 
     int activateemail(int id, String code) ;

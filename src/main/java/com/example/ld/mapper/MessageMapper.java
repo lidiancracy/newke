@@ -1,7 +1,9 @@
 package com.example.ld.mapper;
 
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.ld.entity.Message;
+import com.example.ld.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -13,7 +15,7 @@ import java.util.List;
  * @since 2022-09-28 15:38:06
  */
 @Mapper
-public interface MessageMapper  {
+public interface MessageMapper extends BaseMapper<Message> {
 
 
 
@@ -31,4 +33,6 @@ public interface MessageMapper  {
     List<Message> getallbyconvid_fenye(String conversationId, int limit, int offset);
 
     void savemsg(Message message);
+
+
 }

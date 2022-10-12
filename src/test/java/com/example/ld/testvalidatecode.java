@@ -3,9 +3,11 @@ package com.example.ld;
 
 import com.example.ld.entity.Comment;
 import com.example.ld.entity.LoginTicket;
+import com.example.ld.entity.Message;
 import com.example.ld.mapper.LoginTicketMapper;
 import com.example.ld.mapper.MessageMapper;
 import com.example.ld.service.CommentService;
+import com.example.ld.service.MSGService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -65,5 +67,25 @@ public class testvalidatecode {
     public void test2(){
         int msgcount = messageMapper.msgcount(8);
         System.out.println(msgcount);
+    }
+
+    /**
+     * test notice
+     * unreadall 全部未读消息
+     */
+    @Autowired
+    MSGService msgService;
+    @Test
+    public void test3(){
+        Integer integer = msgService.unreadall_3();
+        System.out.println(integer);
+    }
+    /**
+     * findlatest like
+     */
+    @Test
+    public void test4(){
+        Message message = msgService.findlatest_like();
+        System.out.println(message);
     }
 }

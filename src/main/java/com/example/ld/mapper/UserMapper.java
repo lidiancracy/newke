@@ -1,6 +1,7 @@
 package com.example.ld.mapper;
 
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.ld.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -12,7 +13,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @since 2022-09-17 19:57:22
  */
 @Mapper
-public interface UserMapper {
+public interface UserMapper  extends BaseMapper<User> {
 
     User selectById(int id);
 
