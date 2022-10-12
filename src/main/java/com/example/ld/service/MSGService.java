@@ -37,13 +37,13 @@ public interface MSGService  extends IService<Message> {
 
     Integer count_commentall(Integer id);
 
-    Integer count_likeunread();
+    Integer count_likeunread(Integer id);
 
-    Integer count_likeall();
+    Integer count_likeall(Integer id);
 
     Message findlatest_fl();
 
-    Integer count_fl_unread();
+    Integer count_fl_unread(Integer id);
 
-    Integer count_fl_all();
+    Integer count_fl_all(Integer id);
 }

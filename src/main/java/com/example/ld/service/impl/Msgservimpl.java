@@ -161,11 +161,13 @@ public class Msgservimpl extends ServiceImpl<MessageMapper, Message> implements 
      * @return
      */
     @Override
-    public Integer count_likeunread() {
+    public Integer count_likeunread(Integer id) {
         LambdaQueryWrapper<Message> messageLambdaQueryWrapper = new LambdaQueryWrapper<>();
         messageLambdaQueryWrapper.eq(Message::getFromId,1)
                 .eq(Message::getConversationId,TOPIC_LIKE)
-                .eq(Message::getStatus,0);
+                .eq(Message::getStatus,0)
+                .eq(Message::getToId,id);
+
         long count = count(messageLambdaQueryWrapper);
         return Integer.parseInt(String.valueOf(count));
     }
@@ -175,10 +177,11 @@ public class Msgservimpl extends ServiceImpl<MessageMapper, Message> implements 
      * @return
      */
     @Override
-    public Integer count_likeall() {
+    public Integer count_likeall(Integer id) {
         LambdaQueryWrapper<Message> messageLambdaQueryWrapper = new LambdaQueryWrapper<>();
         messageLambdaQueryWrapper.eq(Message::getFromId,1)
-                .eq(Message::getConversationId,TOPIC_LIKE);
+                .eq(Message::getConversationId,TOPIC_LIKE)
+                .eq(Message::getToId,id);
         long count = count(messageLambdaQueryWrapper);
         return Integer.parseInt(String.valueOf(count));
     }
@@ -194,20 +197,22 @@ public class Msgservimpl extends ServiceImpl<MessageMapper, Message> implements 
     }
 
     @Override
-    public Integer count_fl_unread() {
+    public Integer count_fl_unread(Integer id) {
         LambdaQueryWrapper<Message> messageLambdaQueryWrapper = new LambdaQueryWrapper<>();
         messageLambdaQueryWrapper.eq(Message::getFromId,1)
                 .eq(Message::getConversationId,TOPIC_FOLLOW)
-                .eq(Message::getStatus,0);
+                .eq(Message::getStatus,0)
+                .eq(Message::getToId,id);
         long count = count(messageLambdaQueryWrapper);
         return Integer.parseInt(String.valueOf(count));
     }
 
     @Override
-    public Integer count_fl_all() {
+    public Integer count_fl_all(Integer id) {
         LambdaQueryWrapper<Message> messageLambdaQueryWrapper = new LambdaQueryWrapper<>();
         messageLambdaQueryWrapper.eq(Message::getFromId,1)
-                .eq(Message::getConversationId,TOPIC_FOLLOW);
+                .eq(Message::getConversationId,TOPIC_FOLLOW)
+                .eq(Message::getToId,id);
         long count = count(messageLambdaQueryWrapper);
         return Integer.parseInt(String.valueOf(count));
     }

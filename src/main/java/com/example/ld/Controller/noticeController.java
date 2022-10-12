@@ -77,52 +77,52 @@ public class noticeController implements ActivateState {
         model.addAttribute("commentNotice",commentNotice);
 
         //封装like
-//        HashMap<String, Object> likeNotice = new HashMap<>();
-//        Message messagelike =msgService.findlatest_like();
-//        if(messagelike!=null){
-//            likeNotice.put("message",messagelike);
-//        }
-//
-//        String likecontent = messagelike.getContent();
-//        if(likecontent==null){
-//            throw new IllegalArgumentException("消息内容为空");
-//        }
-//        Event eventlike = JSONObject.parseObject(likecontent, Event.class);
-//        int userIdlike = eventlike.getUserId();
-//        User userlike = userMapper.selectById(userIdlike);
-//        if(userlike!=null){
-//            likeNotice.put("user",userlike);
-//        }
-//        Integer like_unread= msgService.count_likeunread();
-//        Integer like_count= msgService.count_likeall();
-//        likeNotice.put("unread",like_unread);
-//        likeNotice.put("count",like_count);
-//        likeNotice.put("entityType",event.getEntityType());
-//        model.addAttribute("likeNotice",likeNotice);
+        HashMap<String, Object> likeNotice = new HashMap<>();
+        Message messagelike =msgService.findlatest_like();
+        if(messagelike!=null){
+            likeNotice.put("message",messagelike);
+        }
+
+        String likecontent = messagelike.getContent();
+        if(likecontent==null){
+            throw new IllegalArgumentException("消息内容为空");
+        }
+        Event eventlike = JSONObject.parseObject(likecontent, Event.class);
+        int userIdlike = eventlike.getUserId();
+        User userlike = userMapper.selectById(userIdlike);
+        if(userlike!=null){
+            likeNotice.put("user",userlike);
+        }
+        Integer like_unread= msgService.count_likeunread(id);
+        Integer like_count= msgService.count_likeall(id);
+        likeNotice.put("unread",like_unread);
+        likeNotice.put("count",like_count);
+        likeNotice.put("entityType",event.getEntityType());
+        model.addAttribute("likeNotice",likeNotice);
 //
 //        //封装follow
-//        HashMap<String, Object> followNotice = new HashMap<>();
-//        Message message_floow =msgService.findlatest_fl();
-//        if(message_floow!=null){
-//            followNotice.put("message",message_floow);
-//        }
-//
-//        String content_fl = message_floow.getContent();
-//        if(content_fl==null){
-//            throw new IllegalArgumentException("消息内容为空");
-//        }
-//        Event event_fl = JSONObject.parseObject(content_fl, Event.class);
-//        int userId_fl = event_fl.getUserId();
-//        User user_fl = userMapper.selectById(userId_fl);
-//        if(user_fl!=null){
-//            followNotice.put("user",user_fl);
-//        }
-//        Integer unread_fl= msgService.count_fl_unread();
-//        Integer count_fl= msgService.count_fl_all();
-//        followNotice.put("unread",unread_fl);
-//        followNotice.put("count",count_fl);
-//        followNotice.put("entityType",event_fl.getEntityType());
-//        model.addAttribute("followNotice",followNotice);
+        HashMap<String, Object> followNotice = new HashMap<>();
+        Message message_floow =msgService.findlatest_fl();
+        if(message_floow!=null){
+            followNotice.put("message",message_floow);
+        }
+
+        String content_fl = message_floow.getContent();
+        if(content_fl==null){
+            throw new IllegalArgumentException("消息内容为空");
+        }
+        Event event_fl = JSONObject.parseObject(content_fl, Event.class);
+        int userId_fl = event_fl.getUserId();
+        User user_fl = userMapper.selectById(userId_fl);
+        if(user_fl!=null){
+            followNotice.put("user",user_fl);
+        }
+        Integer unread_fl= msgService.count_fl_unread(id);
+        Integer count_fl= msgService.count_fl_all(id);
+        followNotice.put("unread",unread_fl);
+        followNotice.put("count",count_fl);
+        followNotice.put("entityType",event_fl.getEntityType());
+        model.addAttribute("followNotice",followNotice);
         return "/site/notice";
     }
 }
