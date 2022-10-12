@@ -88,11 +88,12 @@ public class Msgservimpl extends ServiceImpl<MessageMapper, Message> implements 
      * @return
      */
     @Override
-    public Integer unreadall_3() {
+    public Integer unreadall_3(Integer id) {
         LambdaQueryWrapper<Message> mqwrapper = new LambdaQueryWrapper<>();
 //        系统消息 且未读
         mqwrapper.eq(Message::getFromId,1);
         mqwrapper.eq(Message::getStatus,0);
+        mqwrapper.eq(Message::getToId,id);
         long count = count(mqwrapper);
         return Integer.parseInt(String.valueOf(count));
     }
@@ -131,11 +132,12 @@ public class Msgservimpl extends ServiceImpl<MessageMapper, Message> implements 
      * @return
      */
     @Override
-    public Integer count_commentunread() {
+    public Integer count_commentunread(Integer id) {
         LambdaQueryWrapper<Message> messageLambdaQueryWrapper = new LambdaQueryWrapper<>();
         messageLambdaQueryWrapper.eq(Message::getFromId,1)
                 .eq(Message::getConversationId,TOPIC_COMMENT)
                 .eq(Message::getStatus,0);
+        messageLambdaQueryWrapper.eq(Message::getToId,id);
         long count = count(messageLambdaQueryWrapper);
         return Integer.parseInt(String.valueOf(count));
     }
@@ -145,10 +147,11 @@ public class Msgservimpl extends ServiceImpl<MessageMapper, Message> implements 
      * @return
      */
     @Override
-    public Integer count_commentall() {
+    public Integer count_commentall(Integer id) {
         LambdaQueryWrapper<Message> messageLambdaQueryWrapper = new LambdaQueryWrapper<>();
         messageLambdaQueryWrapper.eq(Message::getFromId,1)
                 .eq(Message::getConversationId,TOPIC_COMMENT);
+        messageLambdaQueryWrapper.eq(Message::getToId,id);
         long count = count(messageLambdaQueryWrapper);
         return Integer.parseInt(String.valueOf(count));
     }

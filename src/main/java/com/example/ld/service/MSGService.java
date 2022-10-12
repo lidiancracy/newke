@@ -3,7 +3,6 @@ package com.example.ld.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.ld.entity.Message;
-import com.example.ld.entity.User;
 
 import java.util.List;
 
@@ -28,15 +27,15 @@ public interface MSGService  extends IService<Message> {
 
     List<Message> selectallby_convid_fenye(String conversationId, int limit, int offset);
 
-    Integer unreadall_3();
+    Integer unreadall_3(Integer id);
 
     Message findlatest_comment();
 
     Message findlatest_like();
 
-    Integer count_commentunread();
+    Integer count_commentunread(Integer id);
 
-    Integer count_commentall();
+    Integer count_commentall(Integer id);
 
     Integer count_likeunread();
 

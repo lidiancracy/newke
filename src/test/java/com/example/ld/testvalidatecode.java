@@ -75,11 +75,7 @@ public class testvalidatecode {
      */
     @Autowired
     MSGService msgService;
-    @Test
-    public void test3(){
-        Integer integer = msgService.unreadall_3();
-        System.out.println(integer);
-    }
+
     /**
      * findlatest like
      */
