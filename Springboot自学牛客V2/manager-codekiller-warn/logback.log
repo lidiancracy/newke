@@ -294,3 +294,49 @@ Using generated security password: 9a498100-0aac-4c71-81d2-badf05410983
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
 2022-10-15 17:24:17.864  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-15 17:32:37.642  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-15 17:32:39.102  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: 66cacfe7-e4eb-417f-a7a7-09d3df1012dd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-15 17:32:39.166  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-15 17:32:41.709  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:32:41.710  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:32:43.853  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:32:43.854  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:32:45.980  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:32:45.980  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:32:48.242  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:32:48.242  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:32:50.758  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:32:50.759  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:32:53.580  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:32:53.580  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:32:56.591  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:32:56.591  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:32:59.776  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:32:59.777  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:33:02.986  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:33:02.986  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:33:06.112  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:33:06.112  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:33:09.130  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2022-10-15 17:33:09.130  WARN   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2022-10-15 17:33:36.961  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-15 17:33:38.449  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: ffd4e358-7ac4-4e04-8d9c-c2003b10b9ac
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-15 17:33:38.513  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-15 17:35:24.066  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-15 17:35:25.585  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: 4ec67627-7f8e-4901-a13f-bf9112a571ba
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-15 17:35:25.649  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.

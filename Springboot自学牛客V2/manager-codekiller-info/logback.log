@@ -12819,3 +12819,453 @@
 2022-10-15 17:24:18.760  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: Consumer stopped
 2022-10-15 17:24:18.807  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
 2022-10-15 17:24:18.809  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-15 17:32:35.333  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 11940 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-15 17:32:35.335  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-15 17:32:36.963  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-15 17:32:36.965  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-15 17:32:36.965  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-15 17:32:36.965  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-15 17:32:36.968  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-15 17:32:36.980  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-15 17:32:36.980  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-15 17:32:36.980  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-15 17:32:37.066  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-15 17:32:37.066  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1675 ms
+2022-10-15 17:32:37.222  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-15 17:32:37.313  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-15 17:32:38.723  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-15 17:32:39.167  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will not secure Ant [pattern='/resources/**']
+2022-10-15 17:32:39.216  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@576323ff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fc386f8, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c0f508b, org.springframework.security.web.header.HeaderWriterFilter@75c3584e, org.springframework.security.web.authentication.logout.LogoutFilter@1631dbbc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13cae908, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a0ee0ba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7eb94590, org.springframework.security.web.session.SessionManagementFilter@1af78e37, org.springframework.security.web.access.ExceptionTranslationFilter@36e98434, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6785786d]
+2022-10-15 17:32:39.342  INFO   [main           ]  org.apache.kafka.clients.consumer.ConsumerConfig   :  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-10-15 17:32:39.441  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka version: 3.1.1
+2022-10-15 17:32:39.443  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka commitId: 97671528ba54a138
+2022-10-15 17:32:39.443  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka startTimeMs: 1665826359439
+2022-10-15 17:32:39.446  INFO   [main           ]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2022-10-15 17:32:39.460  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-15 17:32:39.473  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-15 17:32:39.485  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 4.801 seconds (JVM running for 6.854)
+2022-10-15 17:32:41.706  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:32:43.853  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:32:45.979  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:32:48.241  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:32:50.758  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:32:53.579  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:32:56.591  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:32:59.776  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:33:02.985  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:33:06.111  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:33:09.129  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-15 17:33:11.775  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-15 17:33:11.775  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-15 17:33:11.776  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2022-10-15 17:33:11.776  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-15 17:33:11.777  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-15 17:33:11.777  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics scheduler closed
+2022-10-15 17:33:11.777  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-10-15 17:33:11.777  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics reporters closed
+2022-10-15 17:33:11.780  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2022-10-15 17:33:11.781  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: Consumer stopped
+2022-10-15 17:33:11.812  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-15 17:33:11.812  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-15 17:33:34.691  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 16656 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-15 17:33:34.694  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-15 17:33:36.291  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-15 17:33:36.292  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-15 17:33:36.292  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-15 17:33:36.292  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-15 17:33:36.295  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-15 17:33:36.306  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-15 17:33:36.307  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-15 17:33:36.307  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-15 17:33:36.395  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-15 17:33:36.395  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1645 ms
+2022-10-15 17:33:36.551  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-15 17:33:36.642  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-15 17:33:38.065  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-15 17:33:38.514  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will not secure Ant [pattern='/resources/**']
+2022-10-15 17:33:38.563  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d38a81d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41f61188, org.springframework.security.web.context.SecurityContextPersistenceFilter@27ac3b6d, org.springframework.security.web.header.HeaderWriterFilter@7254a68a, org.springframework.security.web.authentication.logout.LogoutFilter@75312c94, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@464abed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43b74979, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d7c4fcb, org.springframework.security.web.session.SessionManagementFilter@43b7bd5a, org.springframework.security.web.access.ExceptionTranslationFilter@2a666c8e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3183a37c]
+2022-10-15 17:33:38.689  INFO   [main           ]  org.apache.kafka.clients.consumer.ConsumerConfig   :  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-10-15 17:33:38.791  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka version: 3.1.1
+2022-10-15 17:33:38.792  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka commitId: 97671528ba54a138
+2022-10-15 17:33:38.792  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka startTimeMs: 1665826418789
+2022-10-15 17:33:38.794  INFO   [main           ]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2022-10-15 17:33:38.808  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-15 17:33:38.823  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-15 17:33:38.835  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 4.725 seconds (JVM running for 6.81)
+2022-10-15 17:33:39.182  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition like-0 to 0 since the associated topicId changed from null to oRBEmXB-Tn2MF4lKCPFihg
+2022-10-15 17:33:39.183  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition comment-0 to 0 since the associated topicId changed from null to eYI05reeQ1iaHR5K30qbTQ
+2022-10-15 17:33:39.184  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition follow-0 to 0 since the associated topicId changed from null to KnbNC0bSQFOglYy1S7sQYQ
+2022-10-15 17:33:39.186  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Cluster ID: lLDv2k3HTly7peJg1w2kIQ
+2022-10-15 17:33:39.188  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Discovered group coordinator LAPTOP-VTI99V7I:9092 (id: 2147483647 rack: null)
+2022-10-15 17:33:39.191  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2022-10-15 17:33:39.220  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: need to re-join with the given member-id
+2022-10-15 17:33:39.221  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2022-10-15 17:33:39.234  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully joined group with generation Generation{generationId=176, memberId='consumer-community-consumer-group-1-88fa5298-a7c6-4bd8-92af-224da69f1f75', protocol='range'}
+2022-10-15 17:33:39.237  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Finished assignment for group at generation 176: {consumer-community-consumer-group-1-88fa5298-a7c6-4bd8-92af-224da69f1f75=Assignment(partitions=[like-0, comment-0, follow-0])}
+2022-10-15 17:33:39.286  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully synced group in generation Generation{generationId=176, memberId='consumer-community-consumer-group-1-88fa5298-a7c6-4bd8-92af-224da69f1f75', protocol='range'}
+2022-10-15 17:33:39.287  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Notifying assignor about the new Assignment(partitions=[like-0, comment-0, follow-0])
+2022-10-15 17:33:39.290  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Adding newly assigned partitions: comment-0, like-0, follow-0
+2022-10-15 17:33:39.321  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition comment-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-15 17:33:39.321  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition like-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-15 17:33:39.322  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition follow-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-15 17:33:39.344  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: partitions assigned: [comment-0, like-0, follow-0]
+2022-10-15 17:33:46.282  INFO   [nio-8080-exec-1]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-15 17:33:46.283  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-10-15 17:33:46.284  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 1 ms
+2022-10-15 17:34:31.663  INFO   [io-8080-exec-10]  com.example.ld.Controller.logincontroller          :  登陆成功
+2022-10-15 17:35:16.691  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Disconnecting from node 0 due to request timeout.
+2022-10-15 17:35:16.694  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Cancelled in-flight FETCH request with correlation id 76 due to node 0 being disconnected (elapsed time since creation: 33169ms, elapsed time since send: 33169ms, request timeout: 30000ms)
+2022-10-15 17:35:16.700  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.FetchSessionHandler       :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error sending fetch request (sessionId=1061215982, epoch=43) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2022-10-15 17:35:16.967  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Revoke previously assigned partitions comment-0, like-0, follow-0
+2022-10-15 17:35:16.968  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: partitions revoked: [comment-0, like-0, follow-0]
+2022-10-15 17:35:16.968  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Member consumer-community-consumer-group-1-88fa5298-a7c6-4bd8-92af-224da69f1f75 sending LeaveGroup request to coordinator LAPTOP-VTI99V7I:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-10-15 17:35:16.970  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-15 17:35:16.971  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-15 17:35:16.971  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2022-10-15 17:35:16.971  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-15 17:35:16.971  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-15 17:35:16.983  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics scheduler closed
+2022-10-15 17:35:16.983  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-10-15 17:35:16.983  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics reporters closed
+2022-10-15 17:35:16.987  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2022-10-15 17:35:16.988  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: Consumer stopped
+2022-10-15 17:35:17.122  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-15 17:35:17.126  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-15 17:35:21.667  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 13052 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-15 17:35:21.671  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-15 17:35:23.358  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-15 17:35:23.360  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-15 17:35:23.360  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-15 17:35:23.360  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-15 17:35:23.363  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-15 17:35:23.374  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-15 17:35:23.375  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-15 17:35:23.375  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-15 17:35:23.462  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-15 17:35:23.462  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1727 ms
+2022-10-15 17:35:23.628  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-15 17:35:23.720  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-15 17:35:25.187  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-15 17:35:25.650  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will not secure Ant [pattern='/resources/**']
+2022-10-15 17:35:25.701  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51bc649e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f09ff10, org.springframework.security.web.context.SecurityContextPersistenceFilter@23909b3, org.springframework.security.web.header.HeaderWriterFilter@50aa9a91, org.springframework.security.web.authentication.logout.LogoutFilter@26c1f3eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a490518, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@628aea61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@531b1778, org.springframework.security.web.session.SessionManagementFilter@17344d7, org.springframework.security.web.access.ExceptionTranslationFilter@1a1e38ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@109188b4]
+2022-10-15 17:35:25.845  INFO   [main           ]  org.apache.kafka.clients.consumer.ConsumerConfig   :  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-10-15 17:35:25.966  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka version: 3.1.1
+2022-10-15 17:35:25.967  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka commitId: 97671528ba54a138
+2022-10-15 17:35:25.967  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka startTimeMs: 1665826525964
+2022-10-15 17:35:25.970  INFO   [main           ]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2022-10-15 17:35:25.985  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-15 17:35:25.999  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-15 17:35:26.010  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 4.968 seconds (JVM running for 7.233)
+2022-10-15 17:35:26.348  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition like-0 to 0 since the associated topicId changed from null to oRBEmXB-Tn2MF4lKCPFihg
+2022-10-15 17:35:26.349  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition comment-0 to 0 since the associated topicId changed from null to eYI05reeQ1iaHR5K30qbTQ
+2022-10-15 17:35:26.349  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition follow-0 to 0 since the associated topicId changed from null to KnbNC0bSQFOglYy1S7sQYQ
+2022-10-15 17:35:26.352  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Cluster ID: lLDv2k3HTly7peJg1w2kIQ
+2022-10-15 17:35:26.354  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Discovered group coordinator LAPTOP-VTI99V7I:9092 (id: 2147483647 rack: null)
+2022-10-15 17:35:26.357  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2022-10-15 17:35:26.377  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: need to re-join with the given member-id
+2022-10-15 17:35:26.377  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2022-10-15 17:35:26.381  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully joined group with generation Generation{generationId=178, memberId='consumer-community-consumer-group-1-50390599-8ce1-4e28-81b0-e87d57c1cf65', protocol='range'}
+2022-10-15 17:35:26.384  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Finished assignment for group at generation 178: {consumer-community-consumer-group-1-50390599-8ce1-4e28-81b0-e87d57c1cf65=Assignment(partitions=[like-0, comment-0, follow-0])}
+2022-10-15 17:35:26.395  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully synced group in generation Generation{generationId=178, memberId='consumer-community-consumer-group-1-50390599-8ce1-4e28-81b0-e87d57c1cf65', protocol='range'}
+2022-10-15 17:35:26.396  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Notifying assignor about the new Assignment(partitions=[like-0, comment-0, follow-0])
+2022-10-15 17:35:26.399  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Adding newly assigned partitions: comment-0, like-0, follow-0
+2022-10-15 17:35:26.413  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition comment-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-15 17:35:26.413  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition like-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-15 17:35:26.414  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition follow-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-15 17:35:26.428  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: partitions assigned: [comment-0, like-0, follow-0]
+2022-10-15 17:35:31.167  INFO   [nio-8080-exec-1]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-15 17:35:31.168  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-10-15 17:35:31.169  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 1 ms
+2022-10-15 17:35:51.384  INFO   [io-8080-exec-10]  com.example.ld.Controller.logincontroller          :  登陆成功
+2022-10-15 17:39:29.028  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Revoke previously assigned partitions comment-0, like-0, follow-0
+2022-10-15 17:39:29.030  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: partitions revoked: [comment-0, like-0, follow-0]
+2022-10-15 17:39:29.032  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Member consumer-community-consumer-group-1-50390599-8ce1-4e28-81b0-e87d57c1cf65 sending LeaveGroup request to coordinator LAPTOP-VTI99V7I:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-10-15 17:39:29.037  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-15 17:39:29.037  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-15 17:39:29.037  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2022-10-15 17:39:29.038  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-15 17:39:29.038  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-15 17:39:29.043  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics scheduler closed
+2022-10-15 17:39:29.043  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-10-15 17:39:29.043  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics reporters closed
+2022-10-15 17:39:29.053  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2022-10-15 17:39:29.053  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: Consumer stopped
+2022-10-15 17:39:29.216  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-15 17:39:29.220  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed

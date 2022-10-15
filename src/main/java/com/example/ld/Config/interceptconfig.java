@@ -30,6 +30,8 @@ import java.io.PrintWriter;
 @Configuration
 public class interceptconfig extends WebSecurityConfigurerAdapter implements ActivateState {
 
+
+
     @Override
     public void configure(WebSecurity web) throws Exception {
         // 忽略静态资源的访问
