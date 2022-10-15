@@ -8,6 +8,7 @@ import com.example.ld.mapper.LoginTicketMapper;
 import com.example.ld.mapper.MessageMapper;
 import com.example.ld.service.CommentService;
 import com.example.ld.service.MSGService;
+import com.example.ld.service.postservice;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -85,9 +86,11 @@ public class testvalidatecode {
         System.out.println(message);
     }
 
-
+    @Autowired
+    postservice postservice;
     @Test
     public void test5(){
+        postservice.totop("5");
 
     }
 }

@@ -1,7 +1,9 @@
 package com.example.ld.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.ld.entity.Comment;
 import com.example.ld.entity.DiscussPost;
+import com.example.ld.entity.User;
 
 import java.util.List;
 
@@ -10,7 +12,7 @@ import java.util.List;
  * @Description TODO
  * @Date 2022/9/24 17:05
  */
-public interface postservice {
+public interface postservice extends IService<DiscussPost> {
     void addDiscussPost(DiscussPost post);
 
     List<DiscussPost> getallpost();
@@ -26,4 +28,10 @@ public interface postservice {
     void addcomment(Integer id,String postid,String content);
 
     void updatecount(String postid, int count);
+
+    void totop(String id);
+
+    void towd(String id);
+
+    void tosc(String id);
 }
