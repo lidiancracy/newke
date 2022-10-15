@@ -74,5 +74,8 @@ public class indexcontroller {
         return "index";
     }
 
-
+    @GetMapping("/denied")
+    public String dn(){
+        return "/error/404";
+    }
 }

@@ -163,6 +163,7 @@ public class logincontroller implements ActivateState {
             Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
             cookie.setMaxAge(exptime);
             response.addCookie(cookie);
+            log.info("登陆成功");
             return "redirect:index";
         } else {
 //            账号密码验证失败,需要将结果返回login页面

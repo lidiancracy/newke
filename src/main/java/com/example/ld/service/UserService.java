@@ -3,9 +3,11 @@ package com.example.ld.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.ld.entity.User;
+import org.springframework.security.core.GrantedAuthority;
 
 
 import java.io.InputStream;
+import java.util.Collection;
 import java.util.Map;
 
 
@@ -40,4 +42,5 @@ public interface UserService  extends IService<User> {
     int changepic(Integer id,String url);
 
     boolean checkchangepassword(Integer id,String newpassword, String newpsagain);
+    public Collection<? extends GrantedAuthority> getAuthorities(int userId);
 }
