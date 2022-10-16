@@ -11,6 +11,10 @@ public class RedisKeyUtil {
     private static final String PREFIX_KAPTCHA = "kaptCha";
     private static final String PREFIX_TICKET = "ticket";
     private static final String PREFIX_USER = "user";
+    // 访客 不记录id
+    private static final String PREFIX_VU = "uv";
+    //    活跃用户 记录id
+    private static final String PREFIX_DAU = "dau";
 
     // 某个实体的赞
     // like:entity:entityType:entityId -> set(userId)
@@ -33,18 +37,39 @@ public class RedisKeyUtil {
     public static String getfollowee(int entitytype, int userId) {
         return PREFIX_USER_followee + SPLIT + userId + SPLIT + entitytype;
     }
+
     // 登录要验证码
     public static String getKapChaKey(String owner) {
         return PREFIX_KAPTCHA + SPLIT + owner;
     }
 
     // 登录凭证
-    public static String getTicketKey(String ticket){
+    public static String getTicketKey(String ticket) {
         return PREFIX_TICKET + SPLIT + ticket;
     }
 
     // 用户
-    public static String getUserKey(int userId){
+    public static String getUserKey(int userId) {
         return PREFIX_USER + SPLIT + userId;
+    }
+
+    // 访客
+    public static String getuv(String date) {
+        return PREFIX_VU + SPLIT + date;
+    }
+
+    //    访客区间
+    public static String getuv_timeline(String start,String end) {
+        return PREFIX_VU + SPLIT + start+SPLIT+end;
+    }
+
+    // 活跃
+    public static String getdau(String date) {
+        return PREFIX_DAU + SPLIT + date;
+    }
+
+    //    活跃区间
+    public static String getdau_timeline(String start,String end) {
+        return PREFIX_DAU + SPLIT + start+SPLIT+end;
     }
 }

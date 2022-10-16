@@ -76,6 +76,8 @@ public class interceptconfig extends WebSecurityConfigurerAdapter implements Act
                 .hasAnyAuthority(
                         AUTHORITY_ADMIN
                 )
+                .antMatchers("/data")
+                .hasAnyAuthority(AUTHORITY_ADMIN)
                 .anyRequest().permitAll()
                 .and().csrf().disable();
 
