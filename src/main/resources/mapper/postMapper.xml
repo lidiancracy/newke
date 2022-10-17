@@ -34,6 +34,9 @@
     <select id="count" resultType="java.lang.Integer">
         select count(*) from comment where entity_id=#{parseInt}
     </select>
+    <select id="getallpostbysore" resultType="com.example.ld.entity.DiscussPost">
+        select * from discuss_post where status!=2 order by type desc,score desc , create_time desc
+    </select>
 
 
 </mapper>

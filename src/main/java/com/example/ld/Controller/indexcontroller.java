@@ -46,9 +46,15 @@ public class indexcontroller {
     @Autowired
     CommentService commentService;
     @RequestMapping({"/","/index"})
-    public String index(Model model, @RequestParam(defaultValue = "1") Integer pageNum) {
+    public String index(Model model, @RequestParam(defaultValue = "1") Integer pageNum,@RequestParam(name = "orderMode",defaultValue = "0") Integer orderMode) {
         PageHelper.startPage(pageNum, 5);// pageNum:当前页码数，第一次进来时默认为1（首页）
-        List<DiscussPost> list = postservice.selectall();//list:页面要展示的数据的集合
+        List<DiscussPost> list=null;
+        if(orderMode==0){
+             list = postservice.selectall();//list:页面要展示的数据的集合
+        }else {
+            list=postservice.selectallbyscore();
+        }
+        model.addAttribute("orderMode",orderMode);
         PageInfo<DiscussPost> pageInfo = new PageInfo<DiscussPost>(list);//pageInfo:将分页数据和显示的数据封装到PageInfo当中
         model.addAttribute("pageInfo", pageInfo);//将封装好的数据返回到前台页面
         /**
@@ -73,8 +79,6 @@ public class indexcontroller {
                 maps.add(tempmap);
             }
         }
-
-
         model.addAttribute("discussPosts",maps);
         return "index";
     }

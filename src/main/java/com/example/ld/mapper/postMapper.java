@@ -26,4 +26,7 @@ public interface postMapper  extends BaseMapper<DiscussPost> {
     void addcomment(int id,int parseInt,String content,String time);
 
     void updatecount(int parseInt, int count);
+
+    List<DiscussPost> getallpostbysore();
+
 }

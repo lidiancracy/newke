@@ -8419,3 +8419,900 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2022-10-17 18:16:44.865  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
 2022-10-17 18:16:45.096  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
 2022-10-17 18:16:45.097  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-17 18:16:49.349  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 25356 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-17 18:16:49.351  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-17 18:16:51.158  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-17 18:16:51.160  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-17 18:16:51.160  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-17 18:16:51.160  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-17 18:16:51.163  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-17 18:16:51.173  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-17 18:16:51.174  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-17 18:16:51.174  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 18:16:51.259  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-17 18:16:51.259  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1851 ms
+2022-10-17 18:16:51.363  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-17 18:16:51.461  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-17 18:16:53.020  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-17 18:16:53.654  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Using default implementation for ThreadExecutor
+2022-10-17 18:16:53.676  INFO   [main           ]  org.quartz.core.SchedulerSignalerImpl              :  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-10-17 18:16:53.677  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Quartz Scheduler v.2.3.2 created.
+2022-10-17 18:16:53.681  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Using db table-based data access locking (synchronization).
+2022-10-17 18:16:53.686  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  JobStoreCMT initialized.
+2022-10-17 18:16:53.687  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2022-10-17 18:16:53.688  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-10-17 18:16:53.688  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Quartz scheduler version: 2.3.2
+2022-10-17 18:16:53.688  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@75caecf7
+2022-10-17 18:16:53.869  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will not secure Ant [pattern='/resources/**']
+2022-10-17 18:16:53.918  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b8683b8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@495598c5, org.springframework.security.web.context.SecurityContextPersistenceFilter@98a0842, org.springframework.security.web.header.HeaderWriterFilter@1df83569, org.springframework.security.web.authentication.logout.LogoutFilter@6980fa39, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@525c0f74, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41bc501b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e4ac3f5, org.springframework.security.web.session.SessionManagementFilter@531bfe4b, org.springframework.security.web.access.ExceptionTranslationFilter@ab595e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71eead09]
+2022-10-17 18:16:54.040  INFO   [main           ]  org.apache.kafka.clients.consumer.ConsumerConfig   :  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-10-17 18:16:54.142  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka version: 3.1.1
+2022-10-17 18:16:54.143  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka commitId: 97671528ba54a138
+2022-10-17 18:16:54.143  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka startTimeMs: 1666001814140
+2022-10-17 18:16:54.146  INFO   [main           ]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2022-10-17 18:16:54.154  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-17 18:16:54.167  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-17 18:16:54.168  INFO   [main           ]  o.s.scheduling.quartz.SchedulerFactoryBean         :  Starting Quartz Scheduler now
+2022-10-17 18:16:54.172  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Freed 0 triggers from 'acquired' / 'blocked' state.
+2022-10-17 18:16:54.178  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2022-10-17 18:16:54.178  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Recovery complete.
+2022-10-17 18:16:54.179  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Removed 0 'complete' triggers.
+2022-10-17 18:16:54.181  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Removed 0 stale fired job entries.
+2022-10-17 18:16:54.182  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-10-17 18:16:54.196  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 5.391 seconds (JVM running for 7.019)
+2022-10-17 18:16:54.488  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition like-0 to 0 since the associated topicId changed from null to oRBEmXB-Tn2MF4lKCPFihg
+2022-10-17 18:16:54.489  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition comment-0 to 0 since the associated topicId changed from null to eYI05reeQ1iaHR5K30qbTQ
+2022-10-17 18:16:54.489  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition follow-0 to 0 since the associated topicId changed from null to KnbNC0bSQFOglYy1S7sQYQ
+2022-10-17 18:16:54.491  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Cluster ID: lLDv2k3HTly7peJg1w2kIQ
+2022-10-17 18:16:54.493  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Discovered group coordinator LAPTOP-VTI99V7I:9092 (id: 2147483647 rack: null)
+2022-10-17 18:16:54.495  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2022-10-17 18:16:54.511  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: need to re-join with the given member-id
+2022-10-17 18:16:54.512  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2022-10-17 18:16:54.514  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully joined group with generation Generation{generationId=285, memberId='consumer-community-consumer-group-1-840bc982-212a-4353-9e4f-17fdd75b771d', protocol='range'}
+2022-10-17 18:16:54.516  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Finished assignment for group at generation 285: {consumer-community-consumer-group-1-840bc982-212a-4353-9e4f-17fdd75b771d=Assignment(partitions=[like-0, comment-0, follow-0])}
+2022-10-17 18:16:54.523  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully synced group in generation Generation{generationId=285, memberId='consumer-community-consumer-group-1-840bc982-212a-4353-9e4f-17fdd75b771d', protocol='range'}
+2022-10-17 18:16:54.524  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Notifying assignor about the new Assignment(partitions=[like-0, comment-0, follow-0])
+2022-10-17 18:16:54.526  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Adding newly assigned partitions: comment-0, like-0, follow-0
+2022-10-17 18:16:54.537  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition comment-0 to the committed offset FetchPosition{offset=14, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-17 18:16:54.537  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition like-0 to the committed offset FetchPosition{offset=17, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-17 18:16:54.537  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition follow-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-17 18:16:54.549  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: partitions assigned: [comment-0, like-0, follow-0]
+2022-10-17 18:16:55.121  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:16:57.860  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:01.644  INFO   [nio-8080-exec-2]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 18:17:01.645  INFO   [nio-8080-exec-2]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-10-17 18:17:01.646  INFO   [nio-8080-exec-2]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 1 ms
+2022-10-17 18:17:01.801  INFO   [nio-8080-exec-2]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:17:02.861  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:04.619  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:17:04.639  INFO   [nio-8080-exec-4]  com.example.ld.Controller.DiscussPostController    :  6
+2022-10-17 18:17:05.605  INFO   [io-8080-exec-10]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:17:07.864  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  wonderfalse
+2022-10-17 18:17:07.865  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  likecount0
+2022-10-17 18:17:07.865  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  commencount6
+2022-10-17 18:17:12.858  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:17.859  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:22.857  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:27.858  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:32.860  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:37.857  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:42.858  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:47.857  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:52.861  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:17:57.857  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:02.858  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:07.858  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:12.860  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:17.857  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:22.857  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:27.857  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:32.860  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:37.858  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:42.857  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:47.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:52.860  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:18:57.855  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:02.857  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:07.254  INFO   [nio-8080-exec-3]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:07.856  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:10.137  INFO   [nio-8080-exec-8]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:11.981  INFO   [nio-8080-exec-9]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:12.866  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:15.150  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:15.158  INFO   [nio-8080-exec-4]  com.example.ld.Controller.DiscussPostController    :  2
+2022-10-17 18:19:16.360  INFO   [io-8080-exec-10]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:17.860  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  wonderfalse
+2022-10-17 18:19:17.860  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  likecount0
+2022-10-17 18:19:17.860  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  commencount2
+2022-10-17 18:19:21.279  INFO   [nio-8080-exec-9]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:21.318  INFO   [nio-8080-exec-9]  org.apache.kafka.clients.producer.ProducerConfig   :  ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2022-10-17 18:19:21.332  INFO   [nio-8080-exec-9]  org.apache.kafka.clients.producer.KafkaProducer    :  [Producer clientId=producer-1] Instantiated an idempotent producer.
+2022-10-17 18:19:21.349  INFO   [nio-8080-exec-9]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka version: 3.1.1
+2022-10-17 18:19:21.349  INFO   [nio-8080-exec-9]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka commitId: 97671528ba54a138
+2022-10-17 18:19:21.349  INFO   [nio-8080-exec-9]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka startTimeMs: 1666001961349
+2022-10-17 18:19:21.358  INFO   [ad | producer-1]  org.apache.kafka.clients.Metadata                  :  [Producer clientId=producer-1] Resetting the last seen epoch of partition comment-0 to 0 since the associated topicId changed from null to eYI05reeQ1iaHR5K30qbTQ
+2022-10-17 18:19:21.358  INFO   [ad | producer-1]  org.apache.kafka.clients.Metadata                  :  [Producer clientId=producer-1] Cluster ID: lLDv2k3HTly7peJg1w2kIQ
+2022-10-17 18:19:21.359  INFO   [ad | producer-1]  o.a.k.c.producer.internals.TransactionManager      :  [Producer clientId=producer-1] ProducerId set to 2011 with epoch 0
+2022-10-17 18:19:21.386  INFO   [nio-8080-exec-1]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:21.393  INFO   [nio-8080-exec-1]  com.example.ld.Controller.DiscussPostController    :  3
+2022-10-17 18:19:22.857  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  wonderfalse
+2022-10-17 18:19:22.858  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  likecount0
+2022-10-17 18:19:22.858  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  commencount3
+2022-10-17 18:19:27.856  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:30.910  INFO   [nio-8080-exec-8]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:32.014  INFO   [nio-8080-exec-9]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:32.856  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:33.125  INFO   [nio-8080-exec-5]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:37.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:39.751  INFO   [nio-8080-exec-2]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:39.757  INFO   [nio-8080-exec-2]  com.example.ld.Controller.DiscussPostController    :  28
+2022-10-17 18:19:42.855  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:44.467  INFO   [nio-8080-exec-6]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:45.376  INFO   [nio-8080-exec-7]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:46.205  INFO   [nio-8080-exec-1]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:47.855  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:52.858  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:19:53.366  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:53.372  INFO   [nio-8080-exec-4]  com.example.ld.Controller.DiscussPostController    :  0
+2022-10-17 18:19:54.439  INFO   [io-8080-exec-10]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:54.452  INFO   [ad | producer-1]  org.apache.kafka.clients.Metadata                  :  [Producer clientId=producer-1] Resetting the last seen epoch of partition like-0 to 0 since the associated topicId changed from null to oRBEmXB-Tn2MF4lKCPFihg
+2022-10-17 18:19:56.412  INFO   [nio-8080-exec-1]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:56.425  INFO   [nio-8080-exec-3]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:19:56.430  INFO   [nio-8080-exec-3]  com.example.ld.Controller.DiscussPostController    :  1
+2022-10-17 18:19:57.858  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  wonderfalse
+2022-10-17 18:19:57.858  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  likecount1
+2022-10-17 18:19:57.858  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  commencount1
+2022-10-17 18:20:02.855  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:07.856  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:12.858  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:17.857  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:22.859  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:27.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:32.861  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:37.855  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:42.871  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:47.861  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:52.860  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:20:57.858  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:02.860  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:07.859  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:12.857  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:16.319  INFO   [nio-8080-exec-1]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:21:17.864  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:22.862  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:27.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:32.858  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:37.856  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:42.860  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:47.858  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:52.859  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:21:57.857  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:02.861  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:07.857  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:12.856  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:17.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:22.859  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:27.856  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:32.856  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:37.857  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:42.859  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:47.856  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:52.856  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:22:57.857  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:02.859  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:07.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:12.856  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:17.861  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:22.860  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:27.858  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:32.857  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:37.859  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:42.860  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:47.857  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:52.857  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:23:57.856  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:02.859  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:07.858  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:12.859  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:17.857  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:21.358  INFO   [ad | producer-1]  org.apache.kafka.clients.Metadata                  :  [Producer clientId=producer-1] Resetting the last seen epoch of partition comment-0 to 0 since the associated topicId changed from null to eYI05reeQ1iaHR5K30qbTQ
+2022-10-17 18:24:22.871  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:27.856  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:32.857  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:37.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:42.856  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:47.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:52.865  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:24:57.856  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:02.857  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:07.857  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:12.859  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:17.857  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:22.856  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:27.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:32.865  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:37.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:42.855  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:47.859  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:52.861  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:25:54.800  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-17 18:25:57.857  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:02.855  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:07.856  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:12.861  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:17.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:22.855  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:27.856  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:32.859  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:37.857  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:42.856  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:47.857  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:52.859  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:26:57.855  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:02.856  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:07.859  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:12.861  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:17.855  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:22.858  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:27.857  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:32.859  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:37.857  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:42.857  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:47.856  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:52.860  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:27:57.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:02.857  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:07.856  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:12.860  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:17.857  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:21.364  INFO   [ad | producer-1]  org.apache.kafka.clients.NetworkClient             :  [Producer clientId=producer-1] Node -1 disconnected.
+2022-10-17 18:28:22.063  INFO   [nio-8080-exec-9]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:28:22.856  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:26.520  INFO   [nio-8080-exec-6]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:28:27.859  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:28.125  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:28:32.860  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:37.856  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:42.856  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:47.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:52.859  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:28:57.856  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:02.855  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:07.856  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:12.858  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:17.856  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:22.855  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:27.855  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:32.860  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:37.855  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:42.857  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:47.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:52.859  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:29:57.857  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:02.856  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:07.859  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:12.859  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:17.859  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:22.856  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:27.857  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:32.858  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:37.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:42.859  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:47.857  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:52.864  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:30:57.862  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:02.855  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:07.857  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:12.859  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:17.857  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:22.856  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:27.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:32.858  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:37.856  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:42.857  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:47.856  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:52.860  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:31:57.856  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:02.855  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:07.855  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:12.859  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:17.856  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:22.855  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:27.856  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:32.859  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:37.858  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:42.857  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:47.857  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:52.858  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:32:57.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:02.856  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:07.854  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:12.859  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:17.854  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:22.857  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:27.856  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:32.859  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:37.855  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:42.855  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:47.857  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:52.858  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:33:57.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:02.856  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:07.856  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:12.858  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:17.856  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:22.856  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:27.855  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:32.858  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:37.856  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:42.857  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:47.855  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:52.859  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:34:54.283  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-10-17 18:34:54.569  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Revoke previously assigned partitions comment-0, like-0, follow-0
+2022-10-17 18:34:54.570  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: partitions revoked: [comment-0, like-0, follow-0]
+2022-10-17 18:34:54.572  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Member consumer-community-consumer-group-1-840bc982-212a-4353-9e4f-17fdd75b771d sending LeaveGroup request to coordinator LAPTOP-VTI99V7I:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-10-17 18:34:54.576  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-17 18:34:54.576  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-17 18:34:54.576  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2022-10-17 18:34:54.577  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-17 18:34:54.577  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-17 18:34:54.582  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics scheduler closed
+2022-10-17 18:34:54.582  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-10-17 18:34:54.582  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics reporters closed
+2022-10-17 18:34:54.589  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2022-10-17 18:34:54.590  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: Consumer stopped
+2022-10-17 18:34:54.596  INFO   [ionShutdownHook]  o.s.scheduling.quartz.SchedulerFactoryBean         :  Shutting down Quartz Scheduler
+2022-10-17 18:34:54.596  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-10-17 18:34:54.596  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-10-17 18:34:54.597  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-10-17 18:34:54.599  INFO   [ionShutdownHook]  org.apache.kafka.clients.producer.KafkaProducer    :  [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2022-10-17 18:34:54.602  INFO   [ionShutdownHook]  org.apache.kafka.common.metrics.Metrics            :  Metrics scheduler closed
+2022-10-17 18:34:54.603  INFO   [ionShutdownHook]  org.apache.kafka.common.metrics.Metrics            :  Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-10-17 18:34:54.603  INFO   [ionShutdownHook]  org.apache.kafka.common.metrics.Metrics            :  Metrics reporters closed
+2022-10-17 18:34:54.603  INFO   [ionShutdownHook]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.producer for producer-1 unregistered
+2022-10-17 18:34:54.750  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-17 18:34:54.756  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-17 18:34:58.146  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 28548 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-17 18:34:58.150  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-17 18:34:59.864  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-17 18:34:59.865  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-17 18:34:59.865  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-17 18:34:59.865  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-17 18:34:59.868  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-17 18:34:59.879  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-17 18:34:59.879  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-17 18:34:59.880  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-17 18:34:59.963  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-17 18:34:59.964  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1749 ms
+2022-10-17 18:35:00.060  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-17 18:35:00.149  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-17 18:35:01.696  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-17 18:35:02.276  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Using default implementation for ThreadExecutor
+2022-10-17 18:35:02.285  INFO   [main           ]  org.quartz.core.SchedulerSignalerImpl              :  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-10-17 18:35:02.286  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Quartz Scheduler v.2.3.2 created.
+2022-10-17 18:35:02.288  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Using db table-based data access locking (synchronization).
+2022-10-17 18:35:02.289  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  JobStoreCMT initialized.
+2022-10-17 18:35:02.290  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2022-10-17 18:35:02.291  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-10-17 18:35:02.291  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Quartz scheduler version: 2.3.2
+2022-10-17 18:35:02.291  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@29a5f924
+2022-10-17 18:35:02.430  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will not secure Ant [pattern='/resources/**']
+2022-10-17 18:35:02.478  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4010f232, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24be6e34, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a827b0c, org.springframework.security.web.header.HeaderWriterFilter@5a5024eb, org.springframework.security.web.authentication.logout.LogoutFilter@1dbb9a4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cff38ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77f95e19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39f3285d, org.springframework.security.web.session.SessionManagementFilter@230e163b, org.springframework.security.web.access.ExceptionTranslationFilter@5c8d685e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49b6373f]
+2022-10-17 18:35:02.606  INFO   [main           ]  org.apache.kafka.clients.consumer.ConsumerConfig   :  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-10-17 18:35:02.697  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka version: 3.1.1
+2022-10-17 18:35:02.698  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka commitId: 97671528ba54a138
+2022-10-17 18:35:02.698  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka startTimeMs: 1666002902695
+2022-10-17 18:35:02.700  INFO   [main           ]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2022-10-17 18:35:02.708  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-17 18:35:02.719  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-17 18:35:02.720  INFO   [main           ]  o.s.scheduling.quartz.SchedulerFactoryBean         :  Starting Quartz Scheduler now
+2022-10-17 18:35:02.725  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Freed 0 triggers from 'acquired' / 'blocked' state.
+2022-10-17 18:35:02.731  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2022-10-17 18:35:02.732  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Recovery complete.
+2022-10-17 18:35:02.733  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Removed 0 'complete' triggers.
+2022-10-17 18:35:02.734  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Removed 0 stale fired job entries.
+2022-10-17 18:35:02.735  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-10-17 18:35:02.750  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 5.227 seconds (JVM running for 7.019)
+2022-10-17 18:35:03.075  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition like-0 to 0 since the associated topicId changed from null to oRBEmXB-Tn2MF4lKCPFihg
+2022-10-17 18:35:03.076  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition comment-0 to 0 since the associated topicId changed from null to eYI05reeQ1iaHR5K30qbTQ
+2022-10-17 18:35:03.076  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition follow-0 to 0 since the associated topicId changed from null to KnbNC0bSQFOglYy1S7sQYQ
+2022-10-17 18:35:03.078  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.Metadata                  :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Cluster ID: lLDv2k3HTly7peJg1w2kIQ
+2022-10-17 18:35:03.080  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Discovered group coordinator LAPTOP-VTI99V7I:9092 (id: 2147483647 rack: null)
+2022-10-17 18:35:03.083  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2022-10-17 18:35:03.099  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: need to re-join with the given member-id
+2022-10-17 18:35:03.100  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2022-10-17 18:35:03.102  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully joined group with generation Generation{generationId=287, memberId='consumer-community-consumer-group-1-cdbbd8ce-41a1-4210-873e-825642f5c7d5', protocol='range'}
+2022-10-17 18:35:03.104  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Finished assignment for group at generation 287: {consumer-community-consumer-group-1-cdbbd8ce-41a1-4210-873e-825642f5c7d5=Assignment(partitions=[like-0, comment-0, follow-0])}
+2022-10-17 18:35:03.112  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully synced group in generation Generation{generationId=287, memberId='consumer-community-consumer-group-1-cdbbd8ce-41a1-4210-873e-825642f5c7d5', protocol='range'}
+2022-10-17 18:35:03.112  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Notifying assignor about the new Assignment(partitions=[like-0, comment-0, follow-0])
+2022-10-17 18:35:03.115  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Adding newly assigned partitions: comment-0, like-0, follow-0
+2022-10-17 18:35:03.125  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition comment-0 to the committed offset FetchPosition{offset=16, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-17 18:35:03.125  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition like-0 to the committed offset FetchPosition{offset=18, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-17 18:35:03.125  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition follow-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-VTI99V7I:9092 (id: 0 rack: null)], epoch=0}}
+2022-10-17 18:35:03.137  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: partitions assigned: [comment-0, like-0, follow-0]
+2022-10-17 18:35:03.746  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:03.746  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:05.912  INFO   [nio-8080-exec-4]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 18:35:05.912  INFO   [nio-8080-exec-4]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-10-17 18:35:05.914  INFO   [nio-8080-exec-4]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 2 ms
+2022-10-17 18:35:06.068  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:07.699  INFO   [nio-8080-exec-2]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:07.862  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:09.127  INFO   [nio-8080-exec-9]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:09.815  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:10.376  INFO   [nio-8080-exec-3]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:11.038  INFO   [nio-8080-exec-8]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:11.992  INFO   [nio-8080-exec-5]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:12.867  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:12.875  INFO   [nio-8080-exec-9]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:13.703  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:15.758  INFO   [nio-8080-exec-3]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:17.857  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:18.080  INFO   [nio-8080-exec-8]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:20.375  INFO   [nio-8080-exec-5]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:20.935  INFO   [nio-8080-exec-7]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:22.857  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:24.145  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:24.497  INFO   [io-8080-exec-10]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:27.858  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:28.033  INFO   [nio-8080-exec-6]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:28.785  INFO   [nio-8080-exec-5]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:31.071  INFO   [nio-8080-exec-7]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:32.860  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:33.551  INFO   [nio-8080-exec-1]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:35:37.859  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:42.855  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:47.856  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:52.858  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:35:57.856  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:02.857  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:03.545  INFO   [nio-8080-exec-3]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:03.560  INFO   [nio-8080-exec-3]  com.example.ld.Controller.DiscussPostController    :  28
+2022-10-17 18:36:04.690  INFO   [nio-8080-exec-6]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:04.993  INFO   [nio-8080-exec-1]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:05.030  INFO   [nio-8080-exec-1]  org.apache.kafka.clients.producer.ProducerConfig   :  ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2022-10-17 18:36:05.041  INFO   [nio-8080-exec-1]  org.apache.kafka.clients.producer.KafkaProducer    :  [Producer clientId=producer-1] Instantiated an idempotent producer.
+2022-10-17 18:36:05.054  INFO   [nio-8080-exec-1]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka version: 3.1.1
+2022-10-17 18:36:05.055  INFO   [nio-8080-exec-1]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka commitId: 97671528ba54a138
+2022-10-17 18:36:05.055  INFO   [nio-8080-exec-1]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka startTimeMs: 1666002965054
+2022-10-17 18:36:05.062  INFO   [ad | producer-1]  org.apache.kafka.clients.Metadata                  :  [Producer clientId=producer-1] Resetting the last seen epoch of partition like-0 to 0 since the associated topicId changed from null to oRBEmXB-Tn2MF4lKCPFihg
+2022-10-17 18:36:05.063  INFO   [ad | producer-1]  org.apache.kafka.clients.Metadata                  :  [Producer clientId=producer-1] Cluster ID: lLDv2k3HTly7peJg1w2kIQ
+2022-10-17 18:36:05.064  INFO   [ad | producer-1]  o.a.k.c.producer.internals.TransactionManager      :  [Producer clientId=producer-1] ProducerId set to 2012 with epoch 0
+2022-10-17 18:36:06.266  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:06.272  INFO   [nio-8080-exec-4]  com.example.ld.Controller.DiscussPostController    :  28
+2022-10-17 18:36:07.597  INFO   [nio-8080-exec-3]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:07.862  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  wonderfalse
+2022-10-17 18:36:07.862  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  likecount1
+2022-10-17 18:36:07.862  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  commencount28
+2022-10-17 18:36:08.589  INFO   [nio-8080-exec-1]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:12.856  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:13.736  INFO   [nio-8080-exec-7]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:14.278  INFO   [nio-8080-exec-8]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:15.438  INFO   [nio-8080-exec-2]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:17.855  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:17.967  INFO   [nio-8080-exec-3]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:19.127  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-17 18:36:22.855  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:27.856  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:32.855  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:37.856  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:42.856  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:47.855  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:52.857  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:36:57.856  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:02.855  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:07.857  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:12.857  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:17.856  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:22.857  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:27.855  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:32.856  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:37.857  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:42.855  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:47.856  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:52.855  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:37:57.856  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:02.856  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:07.858  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:12.854  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:17.857  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:22.854  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:27.858  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:32.855  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:37.856  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:42.856  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:47.855  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-17 18:38:48.104  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-10-17 18:38:48.349  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Revoke previously assigned partitions comment-0, like-0, follow-0
+2022-10-17 18:38:48.349  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: partitions revoked: [comment-0, like-0, follow-0]
+2022-10-17 18:38:48.350  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Member consumer-community-consumer-group-1-cdbbd8ce-41a1-4210-873e-825642f5c7d5 sending LeaveGroup request to coordinator LAPTOP-VTI99V7I:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-10-17 18:38:48.351  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-17 18:38:48.352  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-17 18:38:48.352  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2022-10-17 18:38:48.352  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-17 18:38:48.352  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-17 18:38:48.354  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics scheduler closed
+2022-10-17 18:38:48.355  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-10-17 18:38:48.355  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics reporters closed
+2022-10-17 18:38:48.358  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2022-10-17 18:38:48.358  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: Consumer stopped
+2022-10-17 18:38:48.362  INFO   [ionShutdownHook]  o.s.scheduling.quartz.SchedulerFactoryBean         :  Shutting down Quartz Scheduler
+2022-10-17 18:38:48.363  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-10-17 18:38:48.363  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-10-17 18:38:48.363  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-10-17 18:38:48.365  INFO   [ionShutdownHook]  org.apache.kafka.clients.producer.KafkaProducer    :  [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2022-10-17 18:38:48.367  INFO   [ionShutdownHook]  org.apache.kafka.common.metrics.Metrics            :  Metrics scheduler closed
+2022-10-17 18:38:48.367  INFO   [ionShutdownHook]  org.apache.kafka.common.metrics.Metrics            :  Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-10-17 18:38:48.368  INFO   [ionShutdownHook]  org.apache.kafka.common.metrics.Metrics            :  Metrics reporters closed
+2022-10-17 18:38:48.368  INFO   [ionShutdownHook]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.producer for producer-1 unregistered
+2022-10-17 18:38:48.492  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-17 18:38:48.495  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed

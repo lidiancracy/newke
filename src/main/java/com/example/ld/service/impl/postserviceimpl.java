@@ -128,4 +128,13 @@ public class postserviceimpl extends ServiceImpl<postMapper, DiscussPost> implem
         update(qw);
     }
 
+    /**
+     * 按评分查询
+     * @return
+     */
+    @Override
+    public List<DiscussPost> selectallbyscore() {
+        return postmapper.getallpostbysore();
+    }
+
 }

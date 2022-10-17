@@ -36,4 +36,7 @@ public interface postservice extends IService<DiscussPost> {
     void tosc(String id);
 
     void updateScore(Integer postid, double score);
+
+    List<DiscussPost> selectallbyscore();
+
 }
