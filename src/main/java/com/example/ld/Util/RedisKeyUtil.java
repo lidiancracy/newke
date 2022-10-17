@@ -15,6 +15,8 @@ public class RedisKeyUtil {
     private static final String PREFIX_VU = "uv";
     //    活跃用户 记录id
     private static final String PREFIX_DAU = "dau";
+    // 分数变化的帖子
+    private static final String PREFIX_TZ_SCORE = "scorerank";
 
     // 某个实体的赞
     // like:entity:entityType:entityId -> set(userId)
@@ -59,8 +61,8 @@ public class RedisKeyUtil {
     }
 
     //    访客区间
-    public static String getuv_timeline(String start,String end) {
-        return PREFIX_VU + SPLIT + start+SPLIT+end;
+    public static String getuv_timeline(String start, String end) {
+        return PREFIX_VU + SPLIT + start + SPLIT + end;
     }
 
     // 活跃
@@ -69,7 +71,11 @@ public class RedisKeyUtil {
     }
 
     //    活跃区间
-    public static String getdau_timeline(String start,String end) {
-        return PREFIX_DAU + SPLIT + start+SPLIT+end;
+    public static String getdau_timeline(String start, String end) {
+        return PREFIX_DAU + SPLIT + start + SPLIT + end;
+    }
+    // 活跃
+    public static String gettzrank( ) {
+        return PREFIX_TZ_SCORE + SPLIT+"score";
     }
 }

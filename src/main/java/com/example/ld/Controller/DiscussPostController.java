@@ -36,7 +36,8 @@ public class DiscussPostController implements ActivateState {
 
     @Autowired
     private hostholder hostHolder;
-
+    @Autowired
+    RedisTemplate redisTemplate;
     /**
      * 发帖子
      *
@@ -57,6 +58,9 @@ public class DiscussPostController implements ActivateState {
         post.setContent(content);
         post.setCreateTime(new Date());
         postservice.addDiscussPost(post);
+        log.info(String.valueOf(post.getId()));
+
+
 
         // 报错的情况统一处理
         return communityutil.getJSONString(0, "发布成功！");
@@ -73,8 +77,7 @@ public class DiscussPostController implements ActivateState {
     UserMapper userMapper;
     @Autowired
     CommentService commentservice;
-    @Autowired
-    RedisTemplate redisTemplate;
+
     @Autowired
     hostholder hostholder;
     @Autowired
@@ -184,6 +187,11 @@ public class DiscussPostController implements ActivateState {
                 .setEntityId(Integer.parseInt(postid))
                 .setEntityUserId(userid);
         producer.senmsg(event);
+        /**
+         * 将postid存入redis
+         */
+        String key = RedisKeyUtil.gettzrank();
+        redisTemplate.opsForSet().add(key,Integer.parseInt(postid) );
 
         return "redirect:/postdetail/" + postid;
     }

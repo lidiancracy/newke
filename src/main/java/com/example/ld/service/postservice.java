@@ -34,4 +34,6 @@ public interface postservice extends IService<DiscussPost> {
     void towd(String id);
 
     void tosc(String id);
+
+    void updateScore(Integer postid, double score);
 }

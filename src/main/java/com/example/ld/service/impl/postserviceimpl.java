@@ -115,4 +115,17 @@ public class postserviceimpl extends ServiceImpl<postMapper, DiscussPost> implem
         update(dp);
     }
 
+    /**
+     * 更新帖子score
+     * @param postid
+     * @param score
+     */
+    @Override
+    public void updateScore(Integer postid, double score) {
+        LambdaUpdateWrapper<DiscussPost> qw = new LambdaUpdateWrapper<>();
+        qw.eq(DiscussPost::getId,postid)
+                .set(DiscussPost::getScore,score);
+        update(qw);
+    }
+
 }
