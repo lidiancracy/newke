@@ -23,7 +23,7 @@
         update discuss_post set comment_count = #{count} where id=#{parseInt}
     </update>
     <select id="getallpost" resultType="com.example.ld.entity.DiscussPost">
-        select * from discuss_post where status!=2 order by create_time desc
+        select * from discuss_post where status!=2 order by type desc, create_time desc
     </select>
     <select id="getbyid" resultType="com.example.ld.entity.DiscussPost">
         select * from discuss_post where id=#{postid}

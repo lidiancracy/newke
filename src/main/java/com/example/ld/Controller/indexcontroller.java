@@ -5,6 +5,7 @@ import com.example.ld.Util.hostholder;
 import com.example.ld.entity.DiscussPost;
 import com.example.ld.entity.User;
 import com.example.ld.mapper.UserMapper;
+import com.example.ld.service.CommentService;
 import com.example.ld.service.postservice;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -42,6 +43,8 @@ public class indexcontroller {
     postservice postservice;
     @Autowired
     UserMapper userMapper;
+    @Autowired
+    CommentService commentService;
     @RequestMapping({"/","/index"})
     public String index(Model model, @RequestParam(defaultValue = "1") Integer pageNum) {
         PageHelper.startPage(pageNum, 5);// pageNum:当前页码数，第一次进来时默认为1（首页）
@@ -65,6 +68,8 @@ public class indexcontroller {
                 String entityLikeKey = RedisKeyUtil.getEntityLikeKey(1,discussPost.getId() );
                 Long size = redisTemplate.opsForSet().size(entityLikeKey);
                 tempmap.put("likeCount",size);
+                long cmcount=commentService.Countcomment(discussPost.getId());
+                tempmap.put("commentcount",cmcount);
                 maps.add(tempmap);
             }
         }

@@ -84,12 +84,23 @@ public class DiscussPostController implements ActivateState {
     public String postdetail(@PathVariable String postid, Model model, Page page) {
 //        根据帖子id查出帖子所有信息 上半部
         DiscussPost discussPost = postservice.getpostbyid(postid);
-        User lz = userMapper.selectById(Integer.parseInt(discussPost.getUserId()));
+        int i=0;
+        try {
+             i = Integer.parseInt(discussPost.getUserId());
+        }catch (Exception e){
+            log.error(e.getMessage());
+        }
+        User lz = userMapper.selectById(i);
+        if(lz==null){
+            return null;
+        }
 
         model.addAttribute("user", lz);
-        int count = postservice.count(postid);
-        postservice.updatecount(postid, count);
-        discussPost.setCommentCount(count);
+//        int count = postservice.count(postid);
+
+        long countcomment = commentservice.Countcomment(Integer.valueOf(postid));
+        log.info(String.valueOf(countcomment));
+        model.addAttribute("ccment", countcomment);
         model.addAttribute("post", discussPost);
 
 //        likeStatus likeCount 传一下 ，每次刷新页面显示
@@ -112,7 +123,8 @@ public class DiscussPostController implements ActivateState {
          */
         page.setLimit(5);
         page.setPath("/postdetail/" + postid);
-        page.setRows(discussPost.getCommentCount());
+        page.setRows((int) countcomment);
+        postservice.updatecount(postid, (int) countcomment);
         /**
          * 查询出每页的实体集合
          * 渲染前端
@@ -135,6 +147,7 @@ public class DiscussPostController implements ActivateState {
                 if (hostholder.getUser() != null) {
                     int entityLikeStatus = like_serviceimpl.findEntityLikeStatus(hostholder.getUser().getId(), 2, comment.getId());
                     cvo.put("likeStatus", entityLikeStatus);
+
                 }
                 comments.add(cvo);
             }

@@ -96,7 +96,7 @@
 								</li>
 
 								<li class="d-inline ml-2">|</li>
-								<li class="d-inline ml-2"><a href="#replyform" class="text-primary">回帖 7</a></li>
+								<li class="d-inline ml-2"><a href="#replyform" class="text-primary"><span th:text="${ccment}">30</span>条回帖 </a></li>
 							</ul>
 						</div>
 					</div>
@@ -116,7 +116,7 @@
 				<!-- 回帖数量 -->
 				<div class="row">
 					<div class="col-8">
-						<h6><b class="square"></b> <i th:text="${post.commentCount}">30</i>条回帖</h6>
+						<h6><b class="square"></b> <span th:text="${ccment}">30</span>条回帖</h6>
 					</div>
 					<div class="col-4 text-right">
 						<a href="#replyform" class="btn btn-primary btn-sm">&nbsp;&nbsp;回&nbsp;&nbsp;帖&nbsp;&nbsp;</a>

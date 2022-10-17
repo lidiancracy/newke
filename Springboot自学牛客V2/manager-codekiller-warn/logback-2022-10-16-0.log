@@ -1,0 +1,126 @@
+2022-10-16 13:52:51.589  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 13:52:54.433  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: 0d4a9c2b-937e-4e29-b86f-0de5581384ca
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 13:52:54.491  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 13:53:39.185  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 13:53:41.740  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: f4f8df6a-0f37-4943-802d-d49f42cbb8f8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 13:53:41.801  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 13:57:49.188  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 13:57:51.727  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: 0de644aa-fd52-4b0e-8d11-9fa6a86dc9de
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 13:57:51.781  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 16:53:12.979  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 16:53:13.799  WARN   [main           ]  AnnotationConfigServletWebServerApplicationContext :  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcConfig': Unsatisfied dependency expressed through field 'statisticInterceptor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.ld.interceptor.statistic_interceptor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-10-16 16:53:25.417  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 16:53:26.225  WARN   [main           ]  AnnotationConfigServletWebServerApplicationContext :  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcConfig': Unsatisfied dependency expressed through field 'statisticInterceptor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.ld.interceptor.statistic_interceptor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-10-16 16:53:56.082  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 16:53:57.875  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: 9802f0bf-5a82-467f-ab9b-30b539c5dddf
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 16:53:57.960  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 16:54:08.561  WARN   [nio-8080-exec-4]  org.mybatis.spring.mapper.ClassPathMapperScanner   :  No MyBatis mapper was found in '[com.example.ld]' package. Please check your configuration.
+2022-10-16 16:54:33.190  WARN   [io-8080-exec-10]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [223] milliseconds.
+2022-10-16 16:56:22.090  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 16:56:23.587  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: 18f4c799-bba2-4550-aa55-3d2d99825293
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 16:56:23.645  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 16:56:33.467  WARN   [nio-8080-exec-2]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [239] milliseconds.
+2022-10-16 16:57:02.063  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 16:57:03.526  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: 19f31216-4b15-4bf3-a90e-61bb9105e156
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 16:57:03.584  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 16:57:07.860  WARN   [nio-8080-exec-2]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [230] milliseconds.
+2022-10-16 16:57:07.862  WARN   [nio-8080-exec-2]  o.s.w.s.m.support.DefaultHandlerExceptionResolver  :  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-10-16 16:57:13.083  WARN   [io-8080-exec-10]  o.s.w.s.m.support.DefaultHandlerExceptionResolver  :  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-10-16 16:57:16.424  WARN   [nio-8080-exec-5]  o.s.w.s.m.support.DefaultHandlerExceptionResolver  :  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-10-16 16:57:24.449  WARN   [nio-8080-exec-9]  o.s.w.s.m.support.DefaultHandlerExceptionResolver  :  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-10-16 17:00:17.055  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 17:00:18.610  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: 11d2c428-e9ee-4e5c-8a11-0e2bb79bcf34
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 17:00:18.674  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 17:01:19.057  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 17:01:20.589  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: f49fd760-02ab-4f53-8b89-082c867d410a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 17:01:20.651  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 17:01:24.029  WARN   [nio-8080-exec-1]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [220] milliseconds.
+2022-10-16 17:03:39.196  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 17:03:40.750  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: acca06e5-ee67-40d9-9395-e4aaa9a393dc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 17:03:40.810  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 17:03:49.120  WARN   [nio-8080-exec-1]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [219] milliseconds.
+2022-10-16 17:03:49.124  WARN   [nio-8080-exec-1]  o.s.w.s.m.support.DefaultHandlerExceptionResolver  :  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-10-16 17:05:02.419  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 17:05:03.930  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: a2c92339-247c-4712-96d5-b6e353134fa9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 17:05:04.001  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 17:07:17.576  WARN   [nio-8080-exec-2]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [218] milliseconds.
+2022-10-16 17:10:05.007  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 17:10:06.760  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: b1fece84-0ffd-4b8d-8324-4c96651142f5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 17:10:06.819  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 17:13:09.610  WARN   [nio-8080-exec-1]  com.alibaba.druid.pool.DruidAbstractDataSource     :  discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/community?useUnicode=true&characterEncoding=utf-8, version : 1.2.8, lastPacketReceivedIdleMillis : 174737
+2022-10-16 17:13:10.032  WARN   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Synchronous auto-commit of offsets {comment-0=OffsetAndMetadata{offset=1, leaderEpoch=0, metadata=''}, like-0=OffsetAndMetadata{offset=3, leaderEpoch=0, metadata=''}, follow-0=OffsetAndMetadata{offset=1, leaderEpoch=0, metadata=''}} failed: Offset commit cannot be completed since the consumer is not part of an active group for auto partition assignment; it is likely that the consumer was kicked out of the group.
+2022-10-16 17:13:10.037  WARN   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Asynchronous auto-commit of offsets {comment-0=OffsetAndMetadata{offset=1, leaderEpoch=0, metadata=''}, like-0=OffsetAndMetadata{offset=3, leaderEpoch=0, metadata=''}, follow-0=OffsetAndMetadata{offset=1, leaderEpoch=0, metadata=''}} failed: Offset commit cannot be completed since the consumer member's generation is already stale, meaning it has already participated another rebalance and got a new generation. You can try completing the rebalance by calling poll() and then retry commit again
+2022-10-16 17:13:18.539  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 17:13:19.992  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: b5e658a4-8df2-4d2c-8b33-364b3278ed93
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 17:13:20.050  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 17:13:26.372  WARN   [nio-8080-exec-2]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [220] milliseconds.
+2022-10-16 17:14:44.323  WARN   [nio-8080-exec-8]  org.mybatis.spring.mapper.ClassPathMapperScanner   :  No MyBatis mapper was found in '[com.example.ld]' package. Please check your configuration.
+2022-10-16 17:14:56.583  WARN   [main           ]  c.b.mybatisplus.core.injector.AbstractMethod       :  [com.example.ld.mapper.UserMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-10-16 17:14:58.109  WARN   [main           ]  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration    :  
+
+Using generated security password: 41a86cd9-3166-4b94-a8b7-fbb79ba20439
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-16 17:14:58.175  WARN   [main           ]  o.s.s.config.annotation.web.builders.WebSecurity   :  You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-16 17:15:00.646  WARN   [nio-8080-exec-1]  org.apache.catalina.util.SessionIdGeneratorBase    :  Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [226] milliseconds.

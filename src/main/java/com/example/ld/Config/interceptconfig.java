@@ -56,7 +56,8 @@ public class interceptconfig extends WebSecurityConfigurerAdapter implements Act
                         "/notice/**",
                         "/like",
                         "/follow",
-                        "/unfollow"
+                        "/unfollow",
+                        "/postdetail/**"
                 )
                 .hasAnyAuthority(
                         AUTHORITY_USER,

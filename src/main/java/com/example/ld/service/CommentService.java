@@ -1,12 +1,10 @@
 package com.example.ld.service;
 
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.ld.entity.Comment;
-import com.example.ld.entity.User;
 
-import java.io.InputStream;
 import java.util.List;
-import java.util.Map;
 
 
 /**
@@ -15,7 +13,9 @@ import java.util.Map;
  * @author makejava
  * @since 2022-09-17 19:57:22
  */
-public interface CommentService {
+public interface CommentService extends IService<Comment> {
 
     List<Comment> findcommentlist_page(int yijiTitle, String postid, int offset, int limit);
+
+    long Countcomment(Integer id);
 }
