@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.lang.invoke.VarHandle;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -33,7 +33,7 @@ public class usercontroller {
     @loginrequired
     @GetMapping("/setting")
     public String getsetting(){
-        return "/site/setting";
+        return "site/setting";
     }
 
     /**
@@ -80,7 +80,7 @@ public class usercontroller {
             return "redirect:/index";
         }else {
             log.error( "原始密码错误");
-            return "/site/setting";
+            return "site/setting";
         }
 
     }
@@ -119,7 +119,7 @@ public class usercontroller {
         long fans= followserv.fans(userid,3);
         model.addAttribute("followeeCount",fllowcount); //关注了多少人
         model.addAttribute("followerCount",fans);  //粉丝多少
-        return "/site/profile";
+        return "site/profile";
     }
 
 }

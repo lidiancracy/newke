@@ -19,12 +19,12 @@ import org.springframework.web.bind.annotation.*;
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
+
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.net.http.HttpRequest;
+
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -44,12 +44,12 @@ public class logincontroller implements ActivateState {
 
     @RequestMapping(path = "/register", method = RequestMethod.GET)
     public String getRegisterPage() {
-        return "/site/register";
+        return "site/register";
     }
 
     @RequestMapping(path = "/login", method = RequestMethod.GET)
     public String getLoginPage() {
-        return "/site/login";
+        return "site/login";
     }
 
     @RequestMapping(path = "/register", method = RequestMethod.POST)
@@ -58,12 +58,12 @@ public class logincontroller implements ActivateState {
         if (map == null || map.isEmpty()) {
             model.addAttribute("msg", "注册成功，我们已经向您的邮箱发送了一封激活邮件，请尽快激活！");
             model.addAttribute("target", "/index");
-            return "/site/operate-result";
+            return "site/operate-result";
         } else {
             model.addAttribute("usernameMsg", map.get("usernameMsg"));
             model.addAttribute("passwordMsg", map.get("passwordMsg"));
             model.addAttribute("emailMsg", map.get("emailMsg"));
-            return "/site/register";
+            return "site/register";
         }
     }
 
@@ -90,7 +90,7 @@ public class logincontroller implements ActivateState {
             model.addAttribute("msg", "激活失败，您提供的激活码是错误的！");
             model.addAttribute("target", "/index");
         }
-        return "/site/operate-result";
+        return "site/operate-result";
     }
 
 
@@ -155,7 +155,7 @@ public class logincontroller implements ActivateState {
         if (!text.equalsIgnoreCase(checkcode) || !StringUtils.hasText(text) || !StringUtils.hasText(checkcode)) {
 //            如果验证码输入不正确,返回login页面
             model.addAttribute("codeMsg", "验证码有误");
-            return "/site/login";
+            return "site/login";
         }
         int exptime = remenber == true ? remenber_exptime : default_exptime;
         Map<String, Object> map = userService.login(username, password, exptime);
@@ -170,7 +170,7 @@ public class logincontroller implements ActivateState {
 //            账号密码验证失败,需要将结果返回login页面
             model.addAttribute("usernameMsg", map.get("usernameMsg"));
             model.addAttribute("passwordMsg", map.get("passwordMsg"));
-            return "/site/login";
+            return "site/login";
         }
 
     }

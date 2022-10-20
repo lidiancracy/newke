@@ -26,11 +26,11 @@ public class tongjiController {
      */
     @GetMapping("/data")
     public String getdata(){
-        return "/site/admin/data";
+        return "site/admin/data";
     }
     @PostMapping("/data")
     public String getdata2(){
-        return "/site/admin/data";
+        return "site/admin/data";
     }
 
     /**

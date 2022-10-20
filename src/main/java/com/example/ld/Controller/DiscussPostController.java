@@ -156,7 +156,7 @@ public class DiscussPostController implements ActivateState {
             }
         }
         model.addAttribute("comments", comments);
-        return "/site/discuss-detail";
+        return "site/discuss-detail";
     }
 
 

@@ -127,7 +127,7 @@ public class noticeController implements ActivateState {
         followNotice.put("count",count_fl);
         followNotice.put("entityType",event_fl.getEntityType());
         model.addAttribute("followNotice",followNotice);
-        return "/site/notice";
+        return "site/notice";
     }
 
     /**
@@ -182,7 +182,7 @@ public class noticeController implements ActivateState {
             notices.add(map);
         }
         model.addAttribute("notices",notices);
-        return "/site/notice-detail";
+        return "site/notice-detail";
     }
 
     @GetMapping("/notice/detail/like")
@@ -226,7 +226,7 @@ public class noticeController implements ActivateState {
             notices.add(map);
         }
         model.addAttribute("notices",notices);
-        return "/site/notice-detail";
+        return "site/notice-detail";
     }
 
     @GetMapping("/notice/detail/follow")
@@ -267,6 +267,6 @@ public class noticeController implements ActivateState {
             notices.add(map);
         }
         model.addAttribute("notices",notices);
-        return "/site/notice-detail";
+        return "site/notice-detail";
     }
 }

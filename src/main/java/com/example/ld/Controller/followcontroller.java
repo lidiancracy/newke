@@ -103,7 +103,7 @@ public class followcontroller implements ActivateState {
 
         List<HashMap<String,Object>> users=followservice.findall(userid, page.getOffset(), page.getLimit());
         model.addAttribute("users",users);
-        return "/site/followee";
+        return "site/followee";
     }
 
     /**
@@ -125,6 +125,6 @@ public class followcontroller implements ActivateState {
 
         List<HashMap<String,Object>> users=followservice.findallfans(userid, page.getOffset(), page.getLimit());
         model.addAttribute("users",users);
-        return "/site/follower";
+        return "site/follower";
     }
 }

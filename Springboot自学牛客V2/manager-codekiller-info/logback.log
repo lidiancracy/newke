@@ -9316,3 +9316,421 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2022-10-17 18:38:48.368  INFO   [ionShutdownHook]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.producer for producer-1 unregistered
 2022-10-17 18:38:48.492  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
 2022-10-17 18:38:48.495  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-19 19:33:56.827  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 11.0.12 on LAPTOP-VTI99V7I with PID 24276 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-19 19:33:56.830  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-19 19:33:58.707  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-19 19:33:58.709  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-19 19:33:58.709  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-19 19:33:58.709  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-19 19:33:58.712  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-19 19:33:58.725  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-19 19:33:58.725  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-19 19:33:58.726  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-19 19:33:58.817  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-19 19:33:58.818  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1926 ms
+2022-10-19 19:33:58.928  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-19 19:33:59.040  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-19 19:34:01.072  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-19 19:34:01.761  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Using default implementation for ThreadExecutor
+2022-10-19 19:34:01.773  INFO   [main           ]  org.quartz.core.SchedulerSignalerImpl              :  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-10-19 19:34:01.773  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Quartz Scheduler v.2.3.2 created.
+2022-10-19 19:34:01.775  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Using db table-based data access locking (synchronization).
+2022-10-19 19:34:01.777  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  JobStoreCMT initialized.
+2022-10-19 19:34:01.778  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2022-10-19 19:34:01.778  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-10-19 19:34:01.778  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Quartz scheduler version: 2.3.2
+2022-10-19 19:34:01.778  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@46ef7340
+2022-10-19 19:34:01.952  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will not secure Ant [pattern='/resources/**']
+2022-10-19 19:34:02.016  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7aad7df5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fd7085d, org.springframework.security.web.context.SecurityContextPersistenceFilter@10c67c1c, org.springframework.security.web.header.HeaderWriterFilter@5a2297d7, org.springframework.security.web.authentication.logout.LogoutFilter@7bf997e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f7f9d3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@640028f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69cc3370, org.springframework.security.web.session.SessionManagementFilter@349686e8, org.springframework.security.web.access.ExceptionTranslationFilter@3a5c6009, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f0b5d79]
+2022-10-19 19:34:02.169  INFO   [main           ]  org.apache.kafka.clients.consumer.ConsumerConfig   :  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-10-19 19:34:02.291  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka version: 3.1.1
+2022-10-19 19:34:02.292  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka commitId: 97671528ba54a138
+2022-10-19 19:34:02.293  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka startTimeMs: 1666179242289
+2022-10-19 19:34:02.295  INFO   [main           ]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2022-10-19 19:34:02.306  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-19 19:34:02.319  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-19 19:34:02.320  INFO   [main           ]  o.s.scheduling.quartz.SchedulerFactoryBean         :  Starting Quartz Scheduler now
+2022-10-19 19:34:02.332  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Freed 0 triggers from 'acquired' / 'blocked' state.
+2022-10-19 19:34:02.335  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Handling 1 trigger(s) that missed their scheduled fire-time.
+2022-10-19 19:34:02.355  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Recovering 1 jobs that were in-progress at the time of the last shut-down.
+2022-10-19 19:34:02.370  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Recovery complete.
+2022-10-19 19:34:02.371  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Removed 0 'complete' triggers.
+2022-10-19 19:34:02.373  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Removed 1 stale fired job entries.
+2022-10-19 19:34:02.376  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-10-19 19:34:02.392  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 6.3 seconds (JVM running for 8.376)
+2022-10-19 19:34:03.817  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:03.817  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:04.763  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:06.896  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:07.863  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:09.041  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:09.365  INFO   [nio-8080-exec-1]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-19 19:34:09.365  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-10-19 19:34:09.366  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 1 ms
+2022-10-19 19:34:11.344  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:12.863  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:13.852  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:16.679  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:17.863  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:19.762  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:22.708  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:22.862  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:25.647  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:27.861  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:28.719  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:31.861  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:32.860  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:34.814  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:37.848  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:37.859  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:40.730  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:42.860  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:43.771  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:46.903  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:47.859  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:49.949  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:52.860  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:53.132  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:56.131  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:34:57.860  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:34:59.019  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:02.218  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:02.858  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:35:05.124  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:07.859  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:35:08.158  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:11.052  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:12.858  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:35:14.247  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:17.503  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:17.858  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:35:20.753  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:22.859  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:35:23.674  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:26.778  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:27.857  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:35:28.528  INFO   [nio-8080-exec-8]  com.example.ld.Controller.logincontroller          :  登陆成功
+2022-10-19 19:35:28.555  INFO   [nio-8080-exec-7]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-19 19:35:29.952  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:29.954  INFO   [nio-8080-exec-4]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-19 19:35:29.971  INFO   [nio-8080-exec-4]  com.example.ld.Controller.DiscussPostController    :  6
+2022-10-19 19:35:31.718  INFO   [nio-8080-exec-8]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-19 19:35:32.858  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:35:33.011  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:35.951  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:37.857  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:35:38.884  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:41.819  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:42.857  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:35:45.061  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:35:45.283  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-10-19 19:35:45.681  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-19 19:35:45.681  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-19 19:35:45.681  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2022-10-19 19:35:45.682  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-19 19:35:45.683  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-19 19:35:45.683  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics scheduler closed
+2022-10-19 19:35:45.684  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-10-19 19:35:45.684  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics reporters closed
+2022-10-19 19:35:45.690  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2022-10-19 19:35:45.691  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: Consumer stopped
+2022-10-19 19:35:45.699  INFO   [ionShutdownHook]  o.s.scheduling.quartz.SchedulerFactoryBean         :  Shutting down Quartz Scheduler
+2022-10-19 19:35:45.699  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-10-19 19:35:45.699  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-10-19 19:35:45.700  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-10-19 19:35:45.834  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-19 19:35:45.839  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed
+2022-10-19 19:40:09.847  INFO   [main           ]  com.example.ld.LdApplication                       :  Starting LdApplication using Java 1.8.0_352 on LAPTOP-VTI99V7I with PID 22728 (F:\Springboot自学\牛客V2\target\classes started by 83799 in F:\Springboot自学\牛客V2)
+2022-10-19 19:40:09.850  INFO   [main           ]  com.example.ld.LdApplication                       :  No active profile set, falling back to 1 default profile: "default"
+2022-10-19 19:40:11.603  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat initialized with port(s): 8080 (http)
+2022-10-19 19:40:11.604  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+2022-10-19 19:40:11.605  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-10-19 19:40:11.605  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-10-19 19:40:11.608  INFO   [main           ]  org.apache.catalina.core.AprLifecycleListener      :  OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-10-19 19:40:11.619  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-19 19:40:11.620  INFO   [main           ]  org.apache.catalina.core.StandardService           :  Starting service [Tomcat]
+2022-10-19 19:40:11.620  INFO   [main           ]  org.apache.catalina.core.StandardEngine            :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-19 19:40:11.704  INFO   [main           ]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring embedded WebApplicationContext
+2022-10-19 19:40:11.705  INFO   [main           ]  o.s.b.w.s.c.ServletWebServerApplicationContext     :  Root WebApplicationContext: initialization completed in 1803 ms
+2022-10-19 19:40:11.811  INFO   [main           ]  c.a.d.s.b.a.DruidDataSourceAutoConfigure           :  Init DruidDataSource
+2022-10-19 19:40:11.908  INFO   [main           ]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} inited
+2022-10-19 19:40:13.959  INFO   [main           ]  o.s.b.a.web.servlet.WelcomePageHandlerMapping      :  Adding welcome page template: index
+2022-10-19 19:40:14.595  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Using default implementation for ThreadExecutor
+2022-10-19 19:40:14.607  INFO   [main           ]  org.quartz.core.SchedulerSignalerImpl              :  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-10-19 19:40:14.607  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Quartz Scheduler v.2.3.2 created.
+2022-10-19 19:40:14.610  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Using db table-based data access locking (synchronization).
+2022-10-19 19:40:14.612  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  JobStoreCMT initialized.
+2022-10-19 19:40:14.613  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2022-10-19 19:40:14.614  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-10-19 19:40:14.614  INFO   [main           ]  org.quartz.impl.StdSchedulerFactory                :  Quartz scheduler version: 2.3.2
+2022-10-19 19:40:14.614  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4a5066f5
+2022-10-19 19:40:14.869  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will not secure Ant [pattern='/resources/**']
+2022-10-19 19:40:14.949  INFO   [main           ]  o.s.security.web.DefaultSecurityFilterChain        :  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c3df478, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3be88cbf, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f0c2eff, org.springframework.security.web.header.HeaderWriterFilter@39f5eba4, org.springframework.security.web.authentication.logout.LogoutFilter@6e2e11ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e60890c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3aebdb4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46cb9794, org.springframework.security.web.session.SessionManagementFilter@3bbb3c84, org.springframework.security.web.access.ExceptionTranslationFilter@5f815f93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70720b78]
+2022-10-19 19:40:15.139  INFO   [main           ]  org.apache.kafka.clients.consumer.ConsumerConfig   :  ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-10-19 19:40:15.299  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka version: 3.1.1
+2022-10-19 19:40:15.300  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka commitId: 97671528ba54a138
+2022-10-19 19:40:15.301  INFO   [main           ]  org.apache.kafka.common.utils.AppInfoParser        :  Kafka startTimeMs: 1666179615296
+2022-10-19 19:40:15.304  INFO   [main           ]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2022-10-19 19:40:15.317  INFO   [main           ]  org.apache.coyote.http11.Http11NioProtocol         :  Starting ProtocolHandler ["http-nio-8080"]
+2022-10-19 19:40:15.333  INFO   [main           ]  o.s.boot.web.embedded.tomcat.TomcatWebServer       :  Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-19 19:40:15.334  INFO   [main           ]  o.s.scheduling.quartz.SchedulerFactoryBean         :  Starting Quartz Scheduler now
+2022-10-19 19:40:15.340  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Freed 0 triggers from 'acquired' / 'blocked' state.
+2022-10-19 19:40:15.343  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Handling 1 trigger(s) that missed their scheduled fire-time.
+2022-10-19 19:40:15.360  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2022-10-19 19:40:15.360  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Recovery complete.
+2022-10-19 19:40:15.361  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Removed 0 'complete' triggers.
+2022-10-19 19:40:15.362  INFO   [main           ]  o.s.scheduling.quartz.LocalDataSourceJobStore      :  Removed 0 stale fired job entries.
+2022-10-19 19:40:15.364  INFO   [main           ]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-10-19 19:40:15.381  INFO   [main           ]  com.example.ld.LdApplication                       :  Started LdApplication in 6.172 seconds (JVM running for 8.754)
+2022-10-19 19:40:17.883  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:19.407  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:40:20.008  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:22.140  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:22.633  INFO   [nio-8080-exec-1]  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]  :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-19 19:40:22.633  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Initializing Servlet 'dispatcherServlet'
+2022-10-19 19:40:22.635  INFO   [nio-8080-exec-1]  org.springframework.web.servlet.DispatcherServlet  :  Completed initialization in 2 ms
+2022-10-19 19:40:22.862  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:40:22.881  INFO   [nio-8080-exec-1]  com.example.ld.interceptor.interceptordeal         :  User(id=9, username=12, password=167b68f18af67d97924e960715e7b1e6, salt=cf5e8, email=837997288@qq.com, type=0, status=1, activationCode=566c627a977a4855b922f2b344516db3, headerUrl=http://images.nowcoder.com/head/330t.png, createTime=Wed Sep 28 15:27:46 CST 2022)
+2022-10-19 19:40:24.383  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:26.769  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:27.861  INFO   [eduler_Worker-3]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:40:29.659  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:32.753  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:32.860  INFO   [eduler_Worker-4]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:40:35.798  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:37.860  INFO   [eduler_Worker-5]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:40:38.879  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:41.930  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:42.861  INFO   [eduler_Worker-6]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:40:44.930  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:47.820  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:47.860  INFO   [eduler_Worker-7]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:40:50.872  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:52.861  INFO   [eduler_Worker-8]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:40:53.855  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:57.053  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:40:57.861  INFO   [eduler_Worker-9]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:41:00.003  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:41:02.858  INFO   [duler_Worker-10]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:41:03.127  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:41:06.028  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:41:07.859  INFO   [eduler_Worker-1]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:41:08.957  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:41:11.848  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:41:12.857  INFO   [eduler_Worker-2]  com.example.ld.quartz.rankjob                      :  redis 排名帖子暂时为空
+2022-10-19 19:41:14.946  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.NetworkClient             :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2022-10-19 19:41:16.305  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-10-19 19:41:16.700  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-19 19:41:16.700  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-19 19:41:16.700  INFO   [ntainer#0-0-C-1]  org.apache.kafka.clients.consumer.KafkaConsumer    :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2022-10-19 19:41:16.701  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation due to: consumer pro-actively leaving the group
+2022-10-19 19:41:16.702  INFO   [ntainer#0-0-C-1]  o.a.k.c.consumer.internals.ConsumerCoordinator     :  [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2022-10-19 19:41:16.702  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics scheduler closed
+2022-10-19 19:41:16.702  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-10-19 19:41:16.703  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.metrics.Metrics            :  Metrics reporters closed
+2022-10-19 19:41:16.707  INFO   [ntainer#0-0-C-1]  org.apache.kafka.common.utils.AppInfoParser        :  App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2022-10-19 19:41:16.707  INFO   [ntainer#0-0-C-1]  o.s.kafka.listener.KafkaMessageListenerContainer   :  community-consumer-group: Consumer stopped
+2022-10-19 19:41:16.712  INFO   [ionShutdownHook]  o.s.scheduling.quartz.SchedulerFactoryBean         :  Shutting down Quartz Scheduler
+2022-10-19 19:41:16.712  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-10-19 19:41:16.712  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-10-19 19:41:16.713  INFO   [ionShutdownHook]  org.quartz.core.QuartzScheduler                    :  Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-10-19 19:41:16.854  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closing ...
+2022-10-19 19:41:16.858  INFO   [ionShutdownHook]  com.alibaba.druid.pool.DruidDataSource             :  {dataSource-1} closed

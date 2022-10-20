@@ -75,7 +75,7 @@ public class MessageController implements ActivateState {
             }
         }
         model.addAttribute("conversations",conversations);
-        return "/site/letter";
+        return "site/letter";
     }
 
     /**
@@ -110,6 +110,6 @@ public class MessageController implements ActivateState {
         }
         model.addAttribute("letters",letters);
 
-        return "/site/letter-detail";
+        return "site/letter-detail";
     }
 }
